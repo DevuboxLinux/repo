@@ -59,13 +59,13 @@ Section: utils
 Maintainer: Steven Pusser <stevep@mxlinux.org>
 Original-Maintainer: Osmo Antero <osmoma@gmail.com>
 Installed-Size: 714
-Depends: gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, pulseaudio, libappindicator3-1
+Depends: gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, pulseaudio | pipewire-pulse, libappindicator3-1
 Filename: pool/main/audio-recorder_3.3.4-1~mx23+2_amd64.deb
-Size: 201924
-MD5sum: cd079d5b5082acc704a872a0b42cd8aa
-SHA1: 0761a63ed0361d63e8b3bb6ed478997382b01b13
-SHA256: 53392da0e070810a05992bcbb94c493940fe4eea96683717a87f3356dc67b345
-SHA512: 7a80c04940a9498d1610a19578dadb7429657a7ead1c1739d727a2292dafc79609b801c5cd6b30d9a3b081d5dbd531b886a812e214f661027ebf65884050e9a1
+Size: 201912
+MD5sum: 8a981f8b1f8ce017a7fa6f333c8cb435
+SHA1: fae0f3d2341370a1b4a914f0618227e9f34e5c74
+SHA256: 2ed8f00e313ce3a539718b8f488b0e7395272319f2b9f391454a51d675e9867e
+SHA512: 79a5e3bc1483304e6fd282129d2345d30a7b2d11c50b4127947948f053733b7aebd67053d32531a35d2a988bd81dd661f4d568b2551f4e5add88247f5f648695
 Homepage: https://launchpad.net/audio-recorder
 Description: Audio recorder for GNOME and Unity Desktops.
  This program allows you to record your favourite music or audio to a file.
