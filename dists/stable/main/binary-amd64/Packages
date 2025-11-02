@@ -200,6 +200,27 @@ Description: Script to "manage" .deb installs from 3rd party vendors/projects
  apt-get functionality for .debs officially published by 3rd party vendors and
  projects.
 
+Package: devubox-archive-keyring
+Architecture: all
+Version: 2025.11
+Multi-Arch: foreign
+Priority: important
+Section: misc
+Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
+Installed-Size: 48
+Depends: gpgv
+Recommends: gnupg
+Breaks: apt (<< 0.7.25.1)
+Filename: pool/main/devubox-archive-keyring_2025.11_all.deb
+Size: 5956
+MD5sum: 82f3392cd6b2e98cd2d5586d10910f4b
+SHA1: f9fcfc8cda0ca8dc4110a59aa26d844ee1edb141
+SHA256: 7973c9af20e52545f041e48998fc2c86d6ecbf812b085e24a6466b0f05c8f135
+SHA512: 602a0e6882504304f0f91493e7cfb81b20ef35bcef9060147b82d13d2c262ac60a309ab04d46f393b1a4d0128f6049d11308a92c9450f3c9444fed28efb9b84c
+Description: GnuPG archive keys of the Devubox-MX Linux archive
+ The Devubox-MX Linux project digitally signs its repository Release files.
+ This package contains the archive keys used for that.
+
 Package: driveutility
 Architecture: all
 Version: 1.7.4
