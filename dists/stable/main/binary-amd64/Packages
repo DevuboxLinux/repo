@@ -1,0 +1,1004 @@
+Package: aptkit
+Architecture: all
+Version: 1.0.8
+Priority: optional
+Section: admin
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 2929
+Depends: gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-packagekitglib-1.0, gir1.2-vte-2.91, gir1.2-xapp-1.0, iso-codes, polkitd, python3-apt, python3-dbus, python3-defer (>= 1.0.6), python3-gi, python3-pkg-resources
+Filename: pool/main/aptkit_1.0.8_all.deb
+Size: 426512
+MD5sum: a7d31d37281b70809fc8eb052dbb095a
+SHA1: 668a575f47d0a1512f6fb89417a2412a379857ae
+SHA256: f855ec12e55e568f812819004fa8ee31014ff84a6ac1bd5334c4be848c8375c6
+SHA512: 1d999fcdcd1c4208f0d7b9a62772bca3f8ecb698d04a9c72e69774a6f2dee7a56a2d5abe3d6e52747473ebda4106c399778fa19fd76fd94f3fdab062b80fbfec
+Homepage: https://github.com/linuxmint/aptkit
+Description: transaction based package management service
+ Aptkit allows users to perform package management tasks,
+ refreshing the cache, upgrading the system, installing or removing software
+ packages.
+ .
+ It provides the following main features:
+ .
+  - D-Bus interface to write clients in several languages
+  - Modules and widgets to write clients in Python3/GTK3
+  - CLI tools
+  - Runs only if required (D-Bus activation)
+  - Fine grained privilege management using PolicyKit, e.g. allowing all
+    desktop user to query for updates without entering a password
+  - Support for media changes during installation from DVD/CDROM
+  - Support for debconf (Debian's package configuration system)
+  - Support for attaching a terminal to the underlying dpkg call
+
+Package: ash
+Architecture: all
+Version: 0.5.12-2
+Priority: optional
+Section: shells
+Source: dash
+Maintainer: Andrej Shadura <andrewsh@debian.org>
+Installed-Size: 26
+Pre-Depends: dash
+Filename: pool/main/ash_0.5.12-2_all.deb
+Size: 12800
+MD5sum: da71e1b739cfbc739e6f86d888adeb28
+SHA1: dc5e0d401a0e706e98cefaa75793fe92b5f0bfc0
+SHA256: 078a420058ab1fe45eec7e349ff7d7200dbbed031614fd450f6595ac9c6a53ad
+SHA512: 7df4a01d40179f0905a7f07f741203863fc8b3d0aa3c49179cfda9555fda8fb1428221eda01564dae09d274cfc8daf84e16de701f101f37dc538d9785eccad49
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Description: compatibility package for dash
+ This package allows upgrading ash to its replacement,
+ dash. It includes the /bin/ash symlink.
+ It can be removed as soon as /bin/ash is no longer used.
+
+Package: audio-recorder
+Architecture: amd64
+Version: 3.3.4-1~mx23+2
+Priority: optional
+Section: utils
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Original-Maintainer: Osmo Antero <osmoma@gmail.com>
+Installed-Size: 714
+Depends: gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, pulseaudio, libappindicator3-1
+Filename: pool/main/audio-recorder_3.3.4-1~mx23+2_amd64.deb
+Size: 201924
+MD5sum: cd079d5b5082acc704a872a0b42cd8aa
+SHA1: 0761a63ed0361d63e8b3bb6ed478997382b01b13
+SHA256: 53392da0e070810a05992bcbb94c493940fe4eea96683717a87f3356dc67b345
+SHA512: 7a80c04940a9498d1610a19578dadb7429657a7ead1c1739d727a2292dafc79609b801c5cd6b30d9a3b081d5dbd531b886a812e214f661027ebf65884050e9a1
+Homepage: https://launchpad.net/audio-recorder
+Description: Audio recorder for GNOME and Unity Desktops.
+ This program allows you to record your favourite music or audio to a file.
+ It can record audio from your system soundcard, microphones, browsers and
+ webcams. Put simply; if it plays out of your loudspeakers you can record it.
+ This program has a timer that can start, stop or pause recording on a certain
+ conditions such as audio level, file size and clock time. It supports several audio (output)
+ formats such as OGG audio, Flac, MP3 and WAV.
+
+Package: barrier
+Architecture: amd64
+Version: 2.4.0+dfsg-4
+Priority: optional
+Section: x11
+Maintainer: Unit 193 <unit193@debian.org>
+Installed-Size: 3186
+Depends: libavahi-compat-libdnssd1 (>= 0.6.16), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.15.1), libssl3 (>= 3.0.0), libstdc++6 (>= 11), libx11-6 (>= 2:1.2.99.901), libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1 (>= 2:1.1.4), libxrandr2, libxtst6, openssl
+Filename: pool/main/barrier_2.4.0+dfsg-4_amd64.deb
+Size: 715988
+MD5sum: f20361478697e31e09ef295e92d626bd
+SHA1: c71eab7446d3f7b428c07450f64adfd0fa55ee51
+SHA256: 47ed490c4e0e0901d3c876276f571975f39ce8c5dd4cd81fafe651cd81ce07b1
+SHA512: bb7b1a3187ee55ab64e358f94679e2d6682cd714199a29e435e6dec0e58d87aedbbcf54247050648417d2524cf086f002eabd26c9839282af0e3e828a6d5ddd6
+Homepage: https://github.com/debauchee/barrier/
+Description: Share mouse, keyboard and clipboard over the network
+ Barrier lets you easily share a single mouse and keyboard between
+ multiple computers with different operating systems, each with its
+ own display, without special hardware.  It's intended for users
+ with multiple computers on their desk since each system uses its
+ own display.
+ .
+ Redirecting the mouse and keyboard is as simple as moving the mouse
+ off the edge of your screen.  Barrier also merges the clipboards of
+ all the systems into one, allowing cut-and-paste between systems.
+ Furthermore, it synchronizes screen savers so they all start and stop
+ together and, if screen locking is enabled, only one screen requires
+ a password to unlock them all.
+
+Package: bulky
+Architecture: all
+Version: 3.9
+Priority: optional
+Section: misc
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 586
+Depends: python3, python3-gi, python3-setproctitle, python3-unidecode, dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/bulky_3.9_all.deb
+Size: 62512
+MD5sum: 923977aa946cb8054c70bd876bb256ef
+SHA1: d5d77901cf2a29a36702bb1d0c6f245be6ed7f93
+SHA256: 56be7575d0ed33607ecb6eef2cefe94f200ae2de6785acecb1e09dbd35ff881d
+SHA512: 5b82ef31db4843e9752d93885d0186902746c89d0871b2bbda35fe0264f592f9c669474ffd11636e6a9ffff60f426f63810546b9390b995c32ad7d7bddb8c18f
+Description: Bulk Renamer
+ Utility application used to rename multiple files.
+
+Package: captain
+Architecture: all
+Version: 1.0.7
+Priority: optional
+Section: admin
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 458
+Depends: aptkit, file, gir1.2-gtk-3.0 (>= 3.22.0), python3-apt, python3-debian, python3-gi, python3-setproctitle, dconf-gsettings-backend | gsettings-backend, python3:any
+Filename: pool/main/captain_1.0.7_all.deb
+Size: 52116
+MD5sum: de0108c3e56fc2aa861cfbe833b8b678
+SHA1: 69dd55eac4c7f79209874d3df72763c8f154c115
+SHA256: 940fcb49aa2d7a5c6f8871b7eec92e1bc9208471155d37cc0eda102999daf135
+SHA512: abb78ad3b1fe809125f4d987e4ac8b28236d3f281d36eb9c35bb3e6d0d7cb47ba74163be2972a25885b7b3f61a61df7b2ff9e951116234c3f7fff96ff182a5fd
+Description: Collection of APT tools
+ Captain contains an installer for .deb files and an installer for apt:// urls.
+
+Package: cbatticon
+Architecture: amd64
+Version: 1.6.13-2~mx25+1
+Priority: optional
+Section: x11
+Maintainer: Ulises Vitulli <dererk@debian.org>
+Installed-Size: 175
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.18.0), libgtk-3-0t64 (>= 3.10.8), libnotify4 (>= 0.7.6), libnotify-bin (>= 0.7.6)
+Filename: pool/main/cbatticon_1.6.13-2~mx25+1_amd64.deb
+Size: 29228
+MD5sum: 90f0c97e7ff9899bcb7076ca7643e8d9
+SHA1: 853208788df43637ca5f34e8259765a5503d7ae8
+SHA256: dd908be0ac49a7e576a5a9d2c8604b13024a0bf6b62771702289a430710e34b4
+SHA512: 443c8235656f5acec84129315dee1d90e41b824f7f7d6a998e841e43aa38dc380a5a027583f2f1ad67e43608521c673e63f66d054778692608ba952c13172632
+Homepage: https://github.com/valr/cbatticon
+Description: lightweight and fast battery icon status and more
+ Utility that displays battery information as battery status, remaining
+ percentage, remaining time, using an icon in the system tray.
+ .
+ Based on code from xbattbar-acpi, cbatticon sits in your system tray,
+ reporting on battery events, like plug-in, critical, remaining, etc.
+ .
+ A regular user can (re)define custom system's behaviour, like performing
+ graceful shutdown on critical status, by user-defined thresholds and commands
+ on low power/critical.
+
+Package: circle-flags-svg
+Architecture: all
+Version: 2.7.0+mint1
+Priority: optional
+Section: universe/misc
+Source: circle-flags
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 730
+Filename: pool/main/circle-flags-svg_2.7.0+mint1_all.deb
+Size: 75000
+MD5sum: 16dc1fa6aef691a86bccdabf6f5108e7
+SHA1: 2acb7a913ee14272cac934c6f6e98f5eb4d4bffd
+SHA256: f142fa3b28471d717c2379527b5c98f0136783044fef992b02fe6f2b881823f1
+SHA512: 937ca86358bb00d475544f42aa2d70cd5e8f58e399e9b7f2c0af709373d3a5b6f154177d8eac1b20899413b299d8a2941063acef448ecafd2c8bbcd1093a7472
+Description: Circle flags in SVG format
+ A collection of circular flags in SVG format.
+
+Package: deb-get
+Architecture: all
+Version: 0.4.5-1
+Priority: optional
+Section: utils
+Maintainer: Martin Wimpress <code@wimpress.io>
+Installed-Size: 89
+Depends: apt, apt-transport-https, bash (>= 4.4~), coreutils (>= 8.25~), curl, dpkg, gpg, grep, libc-bin, lsb-release, sed, sudo, wget
+Filename: pool/main/deb-get_0.4.5-1_all.deb
+Size: 24562
+MD5sum: 23e5a35e41d23a0030fabdd569509015
+SHA1: 43b8ad2ca53b9b9feaf705f38ec4539bbc53563a
+SHA256: c953c369825b291f415b4b1bd83b7b8a92ce63e0bd06a7de15441603d9f93892
+SHA512: 00e2250acf65f2ecf52d713659e769eb17767574e5f861c0ed9140ca04a0ecc45929c5f2b363fb095583b484a690b7ab3404345a52661edad4d1d5fa969f0927
+Homepage: https://github.com/wimpysworld/deb-get
+Description: Script to "manage" .deb installs from 3rd party vendors/projects
+ apt-get functionality for .debs officially published by 3rd party vendors and
+ projects.
+
+Package: driveutility
+Architecture: all
+Version: 1.7.4
+Priority: optional
+Section: misc
+Maintainer: crims0n <crims0n@minios.dev>
+Installed-Size: 317
+Depends: coreutils (>= 8.30), genisoimage, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-polkit-1.0, ntfs-3g, parted, polkitd | policykit-1, pkexec | policykit-1, procps, python3 (>= 3.7), python3-gi, python3-parted, python3-gnupg, python3-unidecode, python3-lz4, gir1.2-udisks-2.0, gir1.2-xapp-1.0, util-linux (>= 2.32), exfatprogs | exfat-utils
+Recommends: python3-zstandard
+Conflicts: mintstick, usb-imagewriter
+Replaces: mintstick, usb-imagewriter
+Filename: pool/main/driveutility_1.7.4_all.deb
+Size: 47168
+MD5sum: f08f5bb92e258be84151def4b321e595
+SHA1: 9d70bb67f3b17f3e0505332115ee63593a60f863
+SHA256: edb841263a9761ff78c329dbafd7684deb6dade5b0fbcb5f27bdc13184f55f41
+SHA512: 5fb9945a42c3f4d56dc1a1fd2967a815c1e0f085ec810a18948de8679ffb7f236da87edc46112539dddc68858da0c278afe204da531da02a48f5fc4f7a5af210
+Description: Graphical utility for writing, formatting, and wiping storage devices
+ A simple and convenient tool to write disk images,
+ format, and securely wipe storage devices.
+
+Package: droopy-mx
+Architecture: all
+Version: 0.1.8~devubox+1
+Priority: optional
+Section: system
+Maintainer: TheBSODFan <bsodandwsodalt@outlook.com>
+Installed-Size: 76
+Filename: pool/main/droopy-mx_0.1.8~devubox+1_all.deb
+Size: 21040
+MD5sum: 5542617596162a0b6704ba2bf77c018f
+SHA1: 475981f796f3ab453ca477e645b0c611bccdbd69
+SHA256: 0b72307e145c270c11942dde4f2f4011c424a28ff0d510de8776c030483f70da
+SHA512: df00ae8c815cdeedeca4f75e2ca1f4e497c99406dad6b536cda59712a47fd37a53b21c379ffd5a59d94d7a203ae790ae782e0609240d6f555aea5bf0e8f70cf0
+Description: A simple way of using a network connection to make a folder
+ in your local MX system available to other systems.  The remote
+ system can upload and/or download files to and from the folder.
+
+Package: easystroke
+Architecture: amd64
+Version: 0.6.0+git20160705-1~mx21+1
+Priority: optional
+Section: x11
+Maintainer: SwampRabbit <swamprabbit@mxlinux.org>
+Original-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1516
+Pre-Depends: dpkg (>= 1.14.12ubuntu3)
+Depends: xdg-utils, libatkmm-1.6-1v5 (>= 2.24.0), libboost-serialization1.74.0 (>= 1.74.0), libc6 (>= 2.29), libcairomm-1.0-1v5 (>= 1.12.0), libdbus-glib-1-2 (>= 0.78), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.31.8), libglibmm-2.4-1v5 (>= 2.64.2), libgtk-3-0 (>= 3.0.0), libgtkmm-3.0-1v5 (>= 3.24.0), libsigc++-2.0-0v5 (>= 2.2.0), libstdc++6 (>= 5.2), libx11-6 (>= 2:1.2.99.901), libxext6, libxfixes3 (>= 1:4.0.1), libxi6 (>= 2:1.2.99.4), libxtst6
+Suggests: cellwriter
+Filename: pool/main/easystroke_0.6.0+git20160705-1~mx21+1_amd64.deb
+Size: 330348
+MD5sum: 2b38ce42c322ce0efd9e37a6ee4762cc
+SHA1: 1c18efe57969e7c51501f0935677a1a9b73cdd0b
+SHA256: 413a8c8137e5bb4f11d4729cf63198c05c92cf73f2367bd6286f75263da093a6
+SHA512: b5168fba90caef6399a5162acf28f3177381dd3e0b8edeb368865340872a4c245e56986a087705349d2f21b50f9765af457458dea665637b5d131c2656a211aa
+Homepage: http://easystroke.sourceforge.net
+Description: gesture recognition program
+ Easystroke is a gesture-recognition application for X11. It aims to be highly
+ configurable while at the same time providing an intuitive user interface. It
+ was designed with a Tablet PC in mind, but it also works well with a mouse.
+
+Package: file-roller
+Architecture: amd64
+Version: 44.6.really43-1~mx25+1
+Priority: optional
+Section: gnome
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 4854
+Depends: bzip2, p7zip-full, dconf-gsettings-backend | gsettings-backend, libarchive13t64 (>= 3.3.3), libc6 (>= 2.34), libcairo2 (>= 1.4.10), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgtk-3-0t64 (>= 3.21.5), libhandy-1-0 (>= 1.5.90), libjson-glib-1.0-0 (>= 1.5.2), libnautilus-extension4 (>= 43~beta.1), libpango-1.0-0 (>= 1.14.0)
+Recommends: gvfs, yelp
+Suggests: unzip, zip, arj, lha, lzip, lzma, lzop, ncompress, rpm2cpio, rzip, sharutils, squashfs-tools, unace, unalz, unar, xz-utils, zoo
+Filename: pool/main/file-roller_44.6.really43-1_mx25+1_amd64.deb
+Size: 723932
+MD5sum: 0503766c888dfb445ec520d635767e65
+SHA1: 43dce051b33bedf044258efcfba5d6889a1f4ba6
+SHA256: d8edc4632c59958aedcd39e601d84e0ee6753223b111fc086ceb9fc44f8f3b50
+SHA512: 0fb385e530765291dae4f8c48b30d96025d83f6354edb66acae040599f2ab06dcbd2809a0e2c69310a5b6f12b00b317ed98e882896481fc8f3adc625e3c57461
+Homepage: https://wiki.gnome.org/Apps/FileRoller
+Description: archive manager for GNOME
+ File-roller is an archive manager for the GNOME environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ File-roller supports the following formats:
+  * Tar (.tar) archives, including those compressed with
+    gzip (.tar.gz, .tgz), bzip (.tar.bz, .tbz), bzip2 (.tar.bz2, .tbz2),
+    compress (.tar.Z, .taz), lzip (.tar.lz, .tlz), lzop (.tar.lzo, .tzo),
+    lzma (.tar.lzma) and xz (.tar.xz)
+  * Zip archives (.zip)
+  * Jar archives (.jar, .ear, .war)
+  * 7z archives (.7z)
+  * iso9660 CD images (.iso)
+  * Lha archives (.lzh)
+  * Archiver archives (.ar)
+  * Comic book archives (.cbz)
+  * Single files compressed with gzip (.gz), bzip (.bz), bzip2 (.bz2),
+    compress (.Z), lzip (.lz), lzop (.lzo), lzma (.lzma) and xz (.xz)
+ .
+ File-roller can extract following formats:
+  * Cabinet archives (.cab)
+  * Debian binary packages (.deb)
+  * Xar archives (.xar)
+ .
+ File-roller doesn't perform archive operations by itself, but relies on
+ standard tools for this.
+
+Package: gcolor3
+Architecture: amd64
+Version: 2.4.0-4~bpo12+1
+Priority: optional
+Section: gnome
+Maintainer: Chow Loong Jin <hyperair@debian.org>
+Installed-Size: 417
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.34), libcairo2 (>= 1.6.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.43.4), libgtk-3-0 (>= 3.21.5), libportal-gtk3-1 (>= 0.5), libportal1 (>= 0.3)
+Filename: pool/main/gcolor3_2.4.0-4_bpo12+1_amd64.deb
+Size: 81160
+MD5sum: 3d5566fca08d0d5ec1a591214293b734
+SHA1: ff65bf004aebb2617fbe355b5a714056df7b4a0a
+SHA256: 494f6264a49f9618f341cc2a7ff0ffe1422663296baa36e8d1b80c85f8c9b517
+SHA512: 6eab3366d2f6f12a9f46d138f65b7ec44b3a1650801a2568cb73a14b1d3f7e9b632d791000dd5294693ad64a7af4594b83f7dd978e01ada55c02c137f14f16b1
+Homepage: https://github.com/Hjdskes/gcolor3
+Description: Simple GTK3 color selector and picker
+ Gcolor3 is a simple GTK3 color selector to provide a quick and easy way to find
+ colors for whatever task is at hand. Colors can be saved and deleted as well.
+
+Package: gnome-online-accounts-gtk
+Architecture: amd64
+Version: 3.50.7+gigi
+Multi-Arch: foreign
+Priority: optional
+Section: gnome
+Maintainer: XAPP <info@xapp-project.org>
+Installed-Size: 305
+Depends: gnome-online-accounts (>= 3.50), libadwaita-1-0 (>= 1.0.0), libc6 (>= 2.34), libglib2.0-0t64 (>= 2.80.0), libgoa-1.0-0b (>= 3.50), libgoa-backend-1.0-2 (>= 3.50), libgtk-4-1 (>= 4.0.0)
+Filename: pool/main/gnome-online-accounts-gtk_3.50.7+gigi_amd64.deb
+Size: 30500
+MD5sum: e0eca50299d029f8b1178ce95b5637ac
+SHA1: 8b406824e740dc286a2d68cc9a72675d83f6e14e
+SHA256: 2e7c1a038f76b1ade27195a85d21f83449443e08af5f376e526da82531149258
+SHA512: a3be3df7022e0196d5562e9bc6669d2497e445fbde83dae94e297562eb5773d4f6f5aaedaaa57db1912ab2cdc6915449f9019011139ffe1083d9f1ee4492b4c5
+Homepage: https://github.com/xapp-project/gnome-online-accounts-gtk
+Description: GUI Utility for logging into online accounts for the
+ purpose of syncing mail, contacts and remote filesystems.
+
+Package: hypnotix
+Architecture: all
+Version: 5.3
+Priority: optional
+Section: video
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 1037
+Depends: gir1.2-xapp-1.0, python3, python3-gi, python3-requests, python3-setproctitle, python3-unidecode, xapps-common, dconf-gsettings-backend | gsettings-backend, libmpv2 | libmpv1, python3-gi-cairo, circle-flags-svg, yt-dlp
+Filename: pool/main/hypnotix_5.3_all.deb
+Size: 144048
+MD5sum: 4fd34bd6ea8c7088991df5bd238e2996
+SHA1: 7cdd8a5a49a78ad733229a58c77602b67cc6fe2f
+SHA256: ed66abcf1f6eb6b076e8ec4c7d4ecda07dd7d19c28a54dd3d70f7ea414c3774e
+SHA512: 2780fac66c020a1bc1d1e66defb132dcceebb0a5dd4970c069e7883149bd2fe195a04ed8a727ef73d9a957f29446b18129068086adcd8971c85d7754382b0d04
+Description: IPTV Player
+ Watch TV by streaming from M3U sources.
+
+Package: indicator-keylock
+Architecture: amd64
+Version: 3.1.1-0~mx21+1
+Priority: extra
+Section: gnome
+Maintainer: SwampRabbit <swamprabbit@mxlinux.org>
+Original-Maintainer: Thea Barnes <thea@awesomebarnes.com>
+Installed-Size: 177
+Depends: libappindicator3-1 (>= 0.2.92), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libdbusmenu-glib4 (>= 0.4.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk-3-0 (>= 3.0.0), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6, dconf-gsettings-backend | gsettings-backend
+Conflicts: indicator-keylock-elementary, indicator-keylock-humanity, indicator-keylock-ubuntu-mono
+Replaces: indicator-keylock-elementary, indicator-keylock-humanity, indicator-keylock-ubuntu-mono
+Filename: pool/main/indicator-keylock_3.1.1-0_mx21+1_amd64.deb
+Size: 21112
+MD5sum: 4b399b2cec7643a23a2772f29241fc71
+SHA1: f76f93cb7c265744231a6469316caff1927c659a
+SHA256: e4cd85f1d79df17d890badf697c3b72c7567c7c7a04a1fa9140075ea553e67b9
+SHA512: 992aa8757e8261c96c77c979d323f3c537d911438af115438a6bc4b3241b69a6b981aa647063f92384ff8a63d3fec682ca5334b58caa99311c29de16c9976b69
+Homepage: http://launchpad.net/indicator-keylock
+Description: Indicator for Lock Keys
+ An appindicator for showing the status of the keyboard lock keys,
+ including Caps Lock, Num Lock and Scroll Lock.
+
+Package: lazpaint-qt5
+Architecture: amd64
+Version: 7.3-1
+Priority: optional
+Section: graphics
+Source: lazpaint
+Maintainer: Juliette ELSASS <circular@fastmail.com>
+Installed-Size: 17635
+Depends: libc6 (>= 2.34), libqt5pas1 (>= 2.6~beta-1), libx11-6
+Conflicts: lazpaint, lazpaint-gtk2, lazpaint-gtk3, lazpaint-qt4
+Filename: pool/main/lazpaint-qt5_7.3-1_amd64.deb
+Size: 3831608
+MD5sum: 5377018c47ad47c497f9f292b66fd94f
+SHA1: 668c62c1cc2f713d8f66437970ac9ba9082ccfa7
+SHA256: 2a33b2ac5f3f383a50589ec6db23a7fc5fb6b4af1449391b9e63e13add1eac46
+SHA512: f12df448ad330268f2562d012edfd145d7770ff39e3f02dd992b53c074eecd8010938ff1877139e42c3e572b7717aeecef1eb75588240e4ddbabaaa9a9e47a66
+Homepage: https://lazpaint.github.io/
+Description: Image editor with raster and  vector layers (qt5)
+ Can read layered files (lzp, ora, pdn, oXo, flat psd), multi-images (gif,
+ ico, tiff), flat files (avif, bmp, jpeg, pcx, png, tga, webp, xpm, xwd),
+ raw images (dng, cr2, nef, arw...), vectorial (svg), 3D (obj). Has drawing
+ tools, vector shapes, phong shading, curve adjustments, filters, render
+ some textures, Python scripting.
+ Uses Qt5 widgetset.
+
+Package: libboost-serialization1.74.0
+Architecture: amd64
+Version: 1.74.0+ds1-21
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: boost1.74
+Maintainer: Debian Boost Team <team+boost@tracker.debian.org>
+Installed-Size: 2484
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.0), libstdc++6 (>= 11)
+Filename: pool/main/libboost-serialization1.74.0_1.74.0+ds1-21_amd64.deb
+Size: 317476
+MD5sum: db154c4708c5a4641abfee7ee4ad3dad
+SHA1: 49b89ff3115600c4b4b4c0053a25523f0345876e
+SHA256: 6fc2bbb606cee07d9177e517e7900165d32a084cec483693b06428e427ff232b
+SHA512: c1003ca1aa01791e1faa5ad3e7f08af76f1f8e64e2c380e74b109d563258a1e3f17d86985e11f62213501e3ba39e314339299b1b0c4180ba106b343995e30525
+Homepage: http://www.boost.org/libs/serialization/
+Description: serialization library for C++
+ This package forms part of the Boost C++ Libraries collection,
+ containing the following functionalities:
+ .
+  * proper restoration of pointers to shared data
+  * serialization of STL containers and other commonly used templates
+  * data portability - streams of bytes created on one platform should
+    be readable on any other
+  * archive interface must be rich enough to permit the creation of an
+    archive that presents serialized data as XML in a useful manner
+ .
+ Here, "serialization" means the reversible deconstruction of an
+ arbitrary set of C++ data structures to a sequence of bytes.
+ archive: to refer to a specific rendering of this stream of bytes.
+
+Package: libgdk-pixbuf2.0-0
+Architecture: amd64
+Version: 2.40.2-2
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: gdk-pixbuf-xlib
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 22
+Depends: libgdk-pixbuf-2.0-0 (>= 2.40.0), libgdk-pixbuf-xlib-2.0-0 (>= 2.40.2-2)
+Filename: pool/main/libgdk-pixbuf2.0-0_2.40.2-2_amd64.deb
+Size: 14144
+MD5sum: c85da0e777c6e8ccfff905ddc22be87f
+SHA1: 449831a53d85297a151c05e3458e39373593972a
+SHA256: 2e1988105dee8597fbb356aeb04cc9e2f9774626d0d2dbd18984d3a500f096c6
+SHA512: 666bb644110c7fc4fab1072f3f5424188b28b7dde535d4ccf69c6558c263452ef4fce7648165859d4f6d3c4e1d9bc110bdf2d9ee5dd46d1baf6571c4529739a3
+Homepage: https://www.gtk.org/
+Description: GDK Pixbuf library (transitional package)
+ The GDK Pixbuf library provides:
+  - Image loading and saving facilities.
+  - Fast scaling and compositing of pixbufs.
+  - Simple animation loading (ie. animated GIFs)
+ .
+ This transitional package depends on the main library libgdk-pixbuf-2.0-0
+ and the deprecated Xlib integration library libgdk-pixbuf-xlib-2.0-0.
+ .
+ Packages that only require the main library should depend on
+ libgdk-pixbuf-2.0-0 | libgdk-pixbuf2.0-0.
+ .
+ Packages that require the Xlib integration should port away from it,
+ or until that can be done, depend on
+ libgdk-pixbuf-xlib-2.0-0 | libgdk-pixbuf2.0-0.
+
+Package: maxautoclicker
+Architecture: amd64
+Version: 1.5
+Priority: optional
+Section: utils
+Maintainer: Brahim Bahamida <bahamida47@gmail.com>
+Installed-Size: 3366
+Depends: libc6, libgtk2.0-0, libx11-6, libgdk-pixbuf2.0-0, libglib2.0-0, libpango-1.0-0, libcairo2, libatk1.0-0, libxtst6
+Filename: pool/main/maxautoclicker_1.5_amd64.deb
+Size: 893088
+MD5sum: a3008167a4a9f5dfd9993c4418d22d46
+SHA1: 186e7e58bb9ec524dd507297f020602e549c2139
+SHA256: c27f2952b6de5f34feb66b909d69c9eb8ad3ff214f4191c1a31cfb56e17a5df5
+SHA512: de2b859d6186fb6bf7b844241a7736084b7ed3914c5511252f3f01e55f7adc7c176089c93065345b7ebcc7d7ac420665cf45dea97b0a58441181e14d4a2bc6bd
+Homepage: https://sourceforge.net/projects/maxautoclicker
+Description: automate and emulate your mouse clicks.
+ Max Auto Clicker is free and useful tool that automate
+ and emulate mouse clicks easily.
+ .
+ For more features and updates visit MaxAutoClicker home page :
+ https://sourceforge.net/projects/maxautoclicker
+ .
+ https://maxautoclicker.blogspot.com
+
+Package: mx-codecs
+Architecture: amd64
+Version: 23.7.03
+Priority: optional
+Section: system
+Maintainer: Adrian <adrian@mxlinux.org>
+Installed-Size: 438
+Depends: mx-viewer | xdg-utils, libc6 (>= 2.4), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.7.0) | libqt5gui5-gles (>= 5.7.0), libqt5network5 (>= 5.14.1), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
+Filename: pool/main/mx-codecs_23.7.03_amd64.deb
+Size: 89780
+MD5sum: 0de1e4b74498fc2a0eb7a308ef3d30aa
+SHA1: 48e0398c201ebbee72f811f1a613162c62350732
+SHA256: b945162add991aa2a763cc9203aa4485f31c2b84a2e676a88ee726a123c2338a
+SHA512: 5663b5c98e108094187ced939ba88bc9aa07ac45b3ef788bc2e1dce53e50ceeb891302d8039ca92b8d7a9edf9653178e5558ebe3359dfa7d4caed43d52b7019f
+Homepage: https://github.com/AdrianTM/mx-codecs
+Description: restricted codecs installer
+ The MX Codecs Installer provides an easy way to install certain codecs that can
+ not be included with MX, due to legal issues in some jurisdictions.  i.e
+ libdvdcss2 and w32codecs.  Please check to see if these are legal
+ in your jurisdiction.  For the most part, users would only need libdvdcss2 for
+ commercial DVD playback, most of the codecs in the other two packages are now
+ provided in open media players.
+
+Package: mx-iphone
+Architecture: all
+Version: 0.1mx25
+Priority: optional
+Section: metapackage
+Maintainer: Timothy E. Harris <maintainer@mxrepo.com>
+Bugs: mailto: maintainer@mxrepo.com
+Installed-Size: 8
+Depends: ideviceinstaller, python3-imobiledevice, libimobiledevice-utils, libimobiledevice-1.0-6, libplist-2.0-4, python3-plist, ifuse
+Filename: pool/main/mx-iphone_0.1mx25_all.deb
+Size: 1484
+MD5sum: 74e57f5326f8e8693a50e4da62874dc6
+SHA1: f6139de33c689be43b6d31441cbd192968e2ba6f
+SHA256: 0f5d9aa01f1c55edd24148f518087df078c0803d2e48bd95aa293d6ea0250119
+SHA512: a749c91aef3d1b226eece1a0afcf9c16d9ad96007795f91a010b0979c9bbfe9c6970ab3b14c2305915b1ed270ebab7e64e2581e4b4e964c2bcf9edc2673405b3
+Description: Metapackage for iPhone as filesystem
+ This package pulls in the packages required to mount an
+ iPhone or iPad filsystem.
+
+Package: mx-night-light
+Architecture: all
+Version: 0.5.0+mx25
+Priority: optional
+Section: x11
+Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
+Installed-Size: 663
+Provides: pardus-night-light
+Depends: python3-gi, python3:any, gir1.2-ayatanaappindicator3-0.1, gir1.2-glib-2.0, gir1.2-gtk-3.0, python3-distro, redshift
+Breaks: pardus-night-light, redshift-gtk, redshift-qt
+Replaces: pardus-night-light
+Filename: pool/main/mx-night-light_0.5.0+mx25_all.deb
+Size: 27380
+MD5sum: faae92bb5fb903f16bdfc6c9faa467eb
+SHA1: 45a2187c4f15a8dc1396c15e01a05e54a56d66f1
+SHA256: e20d6f1bf4e00386987a55ec615c004e997e2a15f05f555227eefcdcfc5088a6
+SHA512: cc5ce58e1ce9b085f559b9dc11f20b8829064d1faa1135c8047d191f59aaba9743a7de8449cb527be84ce0f354d2cace9183db0608df3577504479bb06a7c161
+Homepage: https://github.com/DevuboxLinux/mx-night-light
+Description: MX Night Light.
+ Simple color temperature application based on Redshift.
+ Redshift adjusts the color temperature of your screen
+ according to your surroundings. This may help your eyes
+ hurt less if you are working in front of the screen at night.
+
+Package: network-manager-applet
+Architecture: amd64
+Version: 1.36.1-4
+Priority: optional
+Section: gnome
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Installed-Size: 292
+Depends: libatk1.0-0t64 (>= 1.12.4), libayatana-appindicator3-1 (>= 0.4.90), libc6 (>= 2.34), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.40.0), libgtk-3-0t64 (>= 3.10), libmm-glib0 (>= 0.7.991), libnm0 (>= 1.16.0), libnma0 (>= 1.8.28), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsecret-1-0 (>= 0.18), dconf-gsettings-backend | gsettings-backend, nm-connection-editor (= 1.36.1-4), network-manager, policykit-1-gnome | polkit-1-auth-agent, default-dbus-session-bus | dbus-session-bus
+Recommends: notification-daemon, gnome-keyring, gnome-icon-theme, mobile-broadband-provider-info, iso-codes
+Suggests: network-manager-openconnect-gnome, network-manager-openvpn-gnome, network-manager-vpnc-gnome, network-manager-pptp-gnome
+Breaks: network-manager-gnome (<< 1.36.0-3~)
+Replaces: network-manager-gnome (<< 1.36.0-3~)
+Filename: pool/main/network-manager-applet_1.36.1-4_amd64.deb
+Size: 82128
+MD5sum: 8bf21f508d84541620490135ad405752
+SHA1: ec1b71c56cee7dc43a12d4b96b6b2229895bcc45
+SHA256: 9d8ea7883def0ee9c688cb2a3e29332a87a5ccb6007f399d34c2216779ffb2d8
+SHA512: c7f59f7e9b172f912151cb9f340bc776fe9bec0ebd089bf748177bc9e76261134dc2b25bffc7a4aab84b9c751ac4fb261894479e1383ac87854e0b02501c8297
+Homepage: https://networkmanager.dev
+Description: network management framework (notification area applet)
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, Wi-Fi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package contains nm-applet which is a GTK‐based GUI applet to monitor
+ network status and devices and allows users to start and stop network
+ connections managed by NetworkManager.
+
+Package: network-manager-gnome
+Architecture: amd64
+Version: 1.36.1-4
+Priority: optional
+Section: oldlibs
+Source: network-manager-applet
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Installed-Size: 18
+Depends: network-manager-applet (= 1.36.1-4), nm-connection-editor (= 1.36.1-4)
+Filename: pool/main/network-manager-gnome_1.36.1-4_amd64.deb
+Size: 10488
+MD5sum: c43b6da1b23ee32e335486a4d8d9ca60
+SHA1: eef0a4b06660b96664ef777d991a57668dc63d00
+SHA256: dd52582ca76695e8c80d5fcf35b484597daca943152cfe49eaa0e4078be03ac3
+SHA512: d336ab166bd91aee15b7a1733b5388ab34f2591abe723a28c8a51d1b4f988d5843d31f4529e29883c4ee710cd4d1dd14323b4488a207d4f754abda163ece8d31
+Homepage: https://networkmanager.dev
+Description: transitional package for network-manager-applet and nm-connection-editor
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, Wi-Fi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This transitional package depends on network-manager-applet (shipping
+ nm-applet which provides a notification area applet for controlling
+ NetworkManager) and nm-connection-editor (a network connection configuration
+ editor for NetworkManager).
+ .
+ It can be removed safely once no other package depends on it.
+
+Package: nm-connection-editor
+Architecture: amd64
+Version: 1.36.1-4
+Priority: optional
+Section: gnome
+Source: network-manager-applet
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Installed-Size: 5495
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.44.0), libgtk-3-0t64 (>= 3.21.6), libjansson4 (>= 2.14), libnm0 (>= 1.40.0), libnma0 (>= 1.8.36), libselinux1 (>= 3.1~), network-manager, policykit-1-gnome | polkit-1-auth-agent, default-dbus-session-bus | dbus-session-bus
+Breaks: network-manager-gnome (<< 1.36.0-3~)
+Replaces: network-manager-gnome (<< 1.36.0-3~)
+Filename: pool/main/nm-connection-editor_1.36.1-4_amd64.deb
+Size: 818080
+MD5sum: ffcf94a7df40de06a116672617510981
+SHA1: 78e1dc9b41922543e1e940ce4f317e1b278e5ec1
+SHA256: 4005ea002e8b4d9e5e893e32ffd8bedb4ef8806067fb0b84ecc94d0a36287e83
+SHA512: 42540a5c9596e9db43febf05be1bf082b808580e20e3433c4e53264e2ab5475dd0a5b53138a2368dfa2847df5a86bb07c7577fcf34dff82004f6ca0fd6f74a35
+Homepage: https://networkmanager.dev
+Description: network management framework (connection configuration editor)
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, Wi-Fi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package contains nm-connection-editor which allows users to edit
+ NetworkManager connection settings.
+
+Package: obmenu-generator
+Architecture: all
+Version: 0.90+git20211116-1~mx21+1
+Priority: optional
+Section: utils
+Maintainer: SwampRabbit <swamprabbit@mxlinux.org>
+Original-Maintainer: Matthew T Hoare <matthew.t.hoare@gmail.com>
+Installed-Size: 48
+Depends: libdata-dump-perl, openbox, perl-linux-desktopfiles, libgtk3-perl, libfile-desktopentry-perl
+Filename: pool/main/obmenu-generator_0.90+git20211116-1~mx21+1_all.deb
+Size: 9804
+MD5sum: 132e0079c6f1584779f138b0c06301b0
+SHA1: 503009017e8e10c04a22576ff594794e77aaf174
+SHA256: 1ea185d9631e3a0690ad35518917176d9df3236c35dec334a01f2961b413c040
+SHA512: 48cf56de6e70118d12f58814b9ddd34db083cd53f3b7d8608e57849e26d45a53c7080690c7f0f8c1a35b0a4b51136a8e6b8f10000705e316a33717d3ce6c3590
+Homepage: https://github.com/trizen/obmenu-generator
+Description: Menu generator for Openbox
+ A fast pipe/static menu generator for the Openbox Window Manager, with support
+ for icons.
+
+Package: pacstall
+Architecture: all
+Version: 6.3.5-pacstall1
+Priority: optional
+Section: Pacstall
+Maintainer: Pacstall Team <pacstall@pm.me>
+Installed-Size: 538
+Provides: pacstall
+Depends: wget, tar, bash, sensible-utils, git, ca-certificates, zstd, bubblewrap, iputils-ping, unzip, curl, jq, gettext, build-essential, aptitude, gzip, distro-info-data
+Recommends: axel, ninja-build, meson, spdx-licenses
+Filename: pool/main/pacstall_6.3.5-pacstall1_all.deb
+Size: 108466
+MD5sum: 711a9de6ff1e65996ae0d60897966176
+SHA1: 07c9105790f1a2b96b2df6fa22357aadaa01b496
+SHA256: e013d8eba008ad016c7c2d67d62034126cd971e15208928420901244da9fdfcc
+SHA512: 78729a1ce52b48a99e02f2e4b4b6596196e31a4b18b0dc024c4da96aecbd3f02486541f82d3a33bb63b3fdbdb2c1005e61e6cb770b4c05368536aa649047e1c1
+Homepage: https://pacstall.dev
+Description: An AUR-inspired package manager for Ubuntu
+ Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR
+ and puts a spin on it, making it easier to install and update downstream programs,
+ without scouring github repos and the likes.
+Build-Depends: gettext, gzip
+Uploaders: Pacstall Team <pacstall@pm.me>, Elsie19 <hwengerstickel@pm.me>
+
+Package: perl-linux-desktopfiles
+Architecture: all
+Version: 0.25+git20201209-1~mx21+1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Maintainer: SwampRabbit <swamprabbit@mxlinux.org>
+Original-Maintainer: Matthew T Hoare <matthew.t.hoare@gmail.com>
+Installed-Size: 37
+Depends: perl
+Filename: pool/main/perl-linux-desktopfiles_0.25+git20201209-1~mx21+1_all.deb
+Size: 12920
+MD5sum: 6f9caf60e848f3a48f4279bb99f9daed
+SHA1: b8e8f1d7c6aae3cb44375979636ef327c86a3329
+SHA256: 4815484027ac1aa0a72f5a7562117115e2abdce04be989a7aeba3cf7a6f55e6a
+SHA512: f785e5e9635be0a7752577c82d799deafe782daabadaa753933502bdfc24fac8f67482345a89334087a9beab7baad52e4f49d00dae103baaa5e77661572a71fb
+Homepage: https://github.com/trizen/Linux-DesktopFiles
+Description: perl module for parsing the Linux desktop files
+ Very fast Perl module for parsing the Linux desktop files.
+
+Package: python3-defer
+Architecture: all
+Version: 1.0.6+mint1
+Priority: extra
+Section: python
+Source: python-defer
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sebastian Heinlein (devel) <devel@glatzor.de>
+Installed-Size: 50
+Depends: python3:any (>= 3.2~)
+Filename: pool/main/python3-defer_1.0.6+mint1_all.deb
+Size: 10976
+MD5sum: aae10880366fb63848a74510ca9535c0
+SHA1: 39505f165165689e9af9894491bb6b6fc9854b17
+SHA256: c0019b49bd174f3cf469587d4d1fdc19e083da60f799fcaaff408917f5a86fb2
+SHA512: 9b3f77f357e1923079270af0ee93dd028ad839f617623f5114bf23ace1136ba93956c57197c19a0b7060f691b143562a19c5c7708929f646d9e71adef964f30a
+Homepage: https://launchpad.net/python-defer
+Description: Small framework for asynchronous programming (Python 3)
+ The defer module provides an easy way to write asynchrouns Python 3 programs.
+ It is greatly inspired by Twisted's defer, but hasn't got any external
+ dependencies.
+ .
+ Furthermore it features decorators to write asynchronous D-Bus servers and
+ clients.
+ .
+ At first defer was part of aptdaemon, but moved to a separate project in
+ August of 2010.
+
+Package: qphotorec
+Architecture: amd64
+Version: 7.2-1+mos1
+Priority: optional
+Section: admin
+Source: testdisk
+Maintainer: Jean-Michel Kelbert <kelbert@debian.org>
+Installed-Size: 770
+Depends: libc6 (>= 2.34), libext2fs2 (>= 1.41.0), libgcc-s1 (>= 3.0), libjpeg62-turbo (>= 1.3.1), libntfs-3g89, libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), testdisk
+Filename: pool/main/qphotorec_7.2-1+mos1_amd64.deb
+Size: 257488
+MD5sum: 7a4cca67beb15888bf88e1332c2a7a0b
+SHA1: 13763e870c541e3b3c8f88e550baac98350d647c
+SHA256: d9978f32b0856287b9d06ef8d84c923ea30658b3167df9a6251b24402c8bd26e
+SHA512: 696ebb7186d9ada0fe7afa1ffb819a83c5367e289ad9e6096abac7d1b28229c3e225c6d08c24763a0788ed35e90f19a91d80e8ac67a1c4943c2f008eaec084bb
+Description: GUI version of PhotoRec recovery tool
+ QPhotoRec is a file data recovery software application. It is a GUI version of the
+ PhotoRec recovery tool. It was designed to recover lost files from digital camera
+ memory, hard disks or CD-ROMs.
+
+Package: scrcpy
+Architecture: amd64
+Version: 3.3.3-2~mx25+1
+Priority: optional
+Section: net
+Maintainer: TheBSODFan <bsodandwsodalt@outlook.com>
+Installed-Size: 464
+Provides: scrcpy-server
+Depends: libavcodec61 (>= 7:7.1), libavdevice61 (>= 7:7.1), libavformat61 (>= 7:7.1), libavutil59 (>= 7:7.1), libc6 (>= 2.41), libsdl2-2.0-0 (>= 2.32.4), libusb-1.0-0 (>= 2:1.0.28)
+Recommends: adb
+Breaks: scrcpy-server
+Replaces: scrcpy-server
+Filename: pool/main/scrcpy_3.3.3-2~mx25+1_amd64.deb
+Size: 190192
+MD5sum: 84022777f97c8062449143ed16da18e1
+SHA1: 63412a3e3f30545415c607020daa52aa8ff1f358
+SHA256: 52189ce0509c0838cbe8b8d3fd5e319366f1c3f3e9e43885e76e1faa72311f83
+SHA512: 21679e8eea9dc65180f32e59843548dd83671916f6484865dd8ed5ecb4245271ba6764e61795d3faafdabf12e10b2f4aeb9d459e66b3c5c528231a006ccbf9d6
+Homepage: https://github.com/Genymobile/scrcpy
+Description: Display and control your Android device
+ This application provides display and control of Android devices connected on
+ USB (or over TCP/IP). It does not require any root access.
+ .
+ This package contains the client (desktop) binary, and server (mobile) binary which will be pushed to the Android device.
+
+Package: simplescreenrecorder-lib
+Architecture: amd64
+Version: 0.4.4-6mx25
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: simplescreenrecorder
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 98
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libglu1-mesa | libglu1, libglx0, libopengl0, libstdc++6 (>= 13.1), libx11-6, libxfixes3
+Filename: pool/main/simplescreenrecorder-lib_0.4.4-6mx25_amd64.deb
+Size: 32372
+MD5sum: 5be242ebbe65f62290d1a0365ef80445
+SHA1: af6a391209d3da9c8ee52508fea34d0cc3cd71b2
+SHA256: 085140f2d7736b8b2b1b3e427b092fb8840ac13252853065f6e622834c9ee7dd
+SHA512: 198ba67caadddd0a8343f93e305e4852a39f9b974e0eb8d38f0ab2b6ff12d88d459b8a1905a4e857480a29bda1937dcd0467b9b6f7b6d087732bdfeefbe36eaa
+Homepage: https://www.maartenbaert.be/simplescreenrecorder/
+Description: feature-rich screen recorder that supports X11 and OpenGL - GLInject library
+ SimpleScreenRecorder is a feature-rich screen recorder that supports X11 and
+ OpenGL. It has a Qt-based graphical user interface. It can record the entire
+ screen or part of it, or record OpenGL applications directly. The recording
+ can be paused and resumed at any time. Many different file formats and codecs
+ are supported.
+ .
+ This package contains the GLInject library.
+
+Package: simplescreenrecorder
+Architecture: amd64
+Version: 0.4.4-6mx25
+Priority: optional
+Section: video
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 3898
+Depends: simplescreenrecorder-lib, libasound2t64 (>= 1.0.16), libavcodec61 (>= 7:7.0), libavformat61 (>= 7:7.0), libavutil59 (>= 7:7.0), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libpulse0 (>= 0.99.1), libqt5core5t64 (>= 5.15.1), libqt5gui5t64 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5widgets5t64 (>= 5.2.0), libqt5x11extras5 (>= 5.7.0), libstdc++6 (>= 14), libswscale8 (>= 7:7.0), libv4l-0t64 (>= 0.5.0), libx11-6 (>= 2:1.2.99.901), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1 (>= 2:1.1.4)
+Filename: pool/main/simplescreenrecorder_0.4.4-6mx25_amd64.deb
+Size: 1371900
+MD5sum: ce77a1cf44edeb90af92c3809651c80a
+SHA1: 36dbeda7234db3fded16ed5fd808e4ccb25d1fb3
+SHA256: 1bc00560c9da5d0bbbd43482b9399fe043d23a844b427948cde22cd31e2cc5f9
+SHA512: 61cc26c615d5a11030d8aa9fef19c792655a59097e2958fc04024817197eba5472b8d4f2b03bd244269c75bbbd8f735bcbe25a5052da6c1da4d9aaef4325140a
+Homepage: https://www.maartenbaert.be/simplescreenrecorder/
+Description: Feature-rich screen recorder for X11 and OpenGL
+ Simple Screen Recorder is, despite its name, an actually feature-rich screen
+ recorder. The name reflects the fact that it is simple to use unlike many
+ other free screen recording applications available. It can be easily
+ configured to start recording from an intuitive wizard-like interface.
+ .
+ It can record the entire screen or part of it directly.  The recording can be
+ paused and resumed at any time. Many different file formats and codecs are
+ supported. To perform an X11 recording, all it takes is selecting an area on
+ the root window with the mouse, choosing an output file and pressing record,
+ either by using the mouse or using a hotkey.
+ .
+ It has a Qt-based graphical user interface.
+ .
+ Its complexity becomes apparent in its powerful features. It allows one
+ to record X11 screen areas and fullscreen OpenGL applications including sound
+ supporting both ALSA, PulseAudio, JACK and OSS. It uses libavformat to encode
+ the recorded material into a variety of video formats. Scaling the recorded
+ video is possible as well as configuring the encoding quality for the codec
+ chosen directly from the user interface.
+ .
+ This package contains the main program.
+
+Package: touchegg
+Architecture: amd64
+Version: 2.0.18+gigi
+Priority: optional
+Section: misc
+Maintainer: José Expósito <jose.exposito89@gmail.com>
+Installed-Size: 375
+Depends: libc6 (>= 2.38), libcairo2 (>= 1.2.4), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.68.0), libgtk-3-0t64 (>= 3.19.12), libinput10 (>= 0.21.0), libpugixml1v5 (>= 1.4), libstdc++6 (>= 13.1), libudev1 (>= 183), libx11-6, libxi6 (>= 2:1.2.99.4), libxrandr2 (>= 2:1.2.99.2), libxtst6 (>= 2:1.2.5)
+Filename: pool/main/touchegg_2.0.18+gigi_amd64.deb
+Size: 123616
+MD5sum: f555799d4ebaefd453f122b872ecfb26
+SHA1: 000cd175f431f693c9d69f609711bd05dda7ae6d
+SHA256: 1ed9193172c87cd6e5d8df38d0adc9e73e222a3a56e3a0290061d93e32297ad7
+SHA512: 785b8c2ba937807c628d9dbc84e2fafec829052107ff5cc991477fdd8bc64bcc1dabfe195caee46dda981d44e506143b07ebedcfa4bd5f68800572ffc6221f9b
+Homepage: https://github.com/JoseExposito/touchegg
+Description: Multi-touch gesture recognizer
+ Touchégg is an app that runs in the background and transform the gestures you
+ make in your touchpad into visible actions in your desktop.
+ For example, you can swipe up with 3 fingers to maximize a window or swipe left
+ with 4 finger to switch to the next desktop.
+
+Package: touchpad-indicator
+Architecture: all
+Version: 2.2.3-1mx25+1
+Priority: medium
+Section: utils
+Maintainer: Timothy E. Harris <maintainer@mxrepo.com>
+Original-Maintainer: Lorenzo Carbonell Cerezo <lorenzo.carbonell.cerezo@gmail.com>
+Installed-Size: 1352
+Depends: gir1.2-ayatanaappindicator3-0.1, gir1.2-gconf-2.0 | python3-gi, gir1.2-gdkpixbuf-2.0, gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-rsvg-2.0, python3-dbus, python3-evdev, python3-pyudev, python3-xlib, xinput
+Filename: pool/main/touchpad-indicator_2.2.3-1mx25+1_all.deb
+Size: 382956
+MD5sum: 605948d52e8c927dba099509cb4ca150
+SHA1: 914ba6d41d3472fefd666a68929a3bf6e8905af8
+SHA256: dad7610c8465b032c29141542fad43bdd59aa0112fe123efe161093bc49a71a1
+SHA512: 22fcd99d3ff9df0c7cb87fe81b20d59eceb6c80f1686509e7d22a60f98f166cb94300d375c8e39a8022b7604489884bf1ae9ea0edaa46423514a2e3dbfc3b61e
+Homepage: http://www.atareao.es
+Description: indicator for the touchpad
+ With touchpad-indicator you can enable or disable the touchpad with shortcuts
+ or by clicking on menu. It also disables and then re-enables the touchpad when
+ suspending and then resuming the computer.
+
+Package: ventoy
+Architecture: all
+Version: 1.1.07
+Priority: optional
+Section: System
+Maintainer: pavroo <pavroo@onet.eu>
+Installed-Size: 23760
+Depends: ash, bash, coreutils, dosfstools, e2fsprogs, exfatprogs | exfat-utils, grep, mount, procps, sudo, util-linux, xz-utils
+Filename: pool/main/ventoy_1.1.07_all.deb
+Size: 18763312
+MD5sum: e48ee77a2e1c49b299a651f8330ed275
+SHA1: 626d8b4e6f2d3cd2fb9aa5c58a0af8cada6d516e
+SHA256: 6a8da5faebe5960afeb447bd29798574e8214932644af6fedaa08017df111e88
+SHA512: 1489a1f43502d09d2c2aae69471a78ac4ebf044f21766cc3d21ea6b7fb8f18374d304dd45c5b04df0ed8a88427ce73c430791afc6affdead6346ad81f2a817bf
+Homepage: https://github.com/ventoy/Ventoy
+Description: Ventoy
+ Ventoy is an open source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files. With ventoy, you don't need to format the disk over and over, you just need to copy the image files to the USB drive and boot it.
+ .
+ You can copy many image files at a time and ventoy will give you a boot menu to select them.
+ .
+ x86 Legacy BIOS, IA32 UEFI, x86_64 UEFI, ARM64 UEFI and MIPS64EL UEFI are supported in the same way.
+
+Package: veracrypt
+Architecture: amd64
+Version: 1.26.24-1~deb12-1
+Priority: optional
+Section: libs
+Maintainer: VeraCrypt Team <veracrypt@amcrypto.jp>
+Installed-Size: 33874
+Depends: libwxgtk3.2-1, libayatana-appindicator3-1, libfuse2, dmsetup, sudo
+Conflicts: veracrypt-console
+Filename: pool/main/veracrypt_1.26.24-1~deb12-1_amd64.deb
+Size: 13651256
+MD5sum: 69fce56783dd17d4676aa76b9767b12a
+SHA1: 9ad5c275a00954920bcb9131d98410f5603fbc7a
+SHA256: b00d44779accc803831dd42e0d4c3a63445bb0c26701f0a43d131f76e01f025c
+SHA512: 9558a3452d6eceb5d5bd9c3669502de36a09297657d5d2bd18950d4339826665d8e65a1477dbf251c4582c962ff0cc45a50b2b44e3c0db1d875af9f8364a26b9
+Description: Disk encryption with strong security based on TrueCrypt.
+ Disk encryption with strong security based on TrueCrypt.
+
+Package: warpinator
+Architecture: amd64
+Version: 1.8.10+gigi
+Priority: optional
+Section: x11
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 19686
+Depends: gir1.2-glib-2.0, gir1.2-gtk-3.0 (>= 3.20.0), gir1.2-xapp-1.0 (>= 1.6.0), python3 (<< 3.14), python3 (>= 3.13~), python3-gi, python3-setproctitle, python3-xapp (>= 1.6.0), python3-cryptography, python3-nacl, python3-netaddr, python3-netifaces, python3-ifaddr, python3-qrcode, dconf-gsettings-backend | gsettings-backend, python3:any, libc6 (>= 2.38), libstdc++6 (>= 13.1)
+Filename: pool/main/warpinator_1.8.10+gigi_amd64.deb
+Size: 5489460
+MD5sum: 449bec6fdcc5ccdd1f79f48bedf21e74
+SHA1: 1b51fc51baa17301694cd4d3d551e5d3642ca0c8
+SHA256: e54d87dc1f5ca580fbc07e5d9970a44dc200c1088c1b20744c2ce6cd09c08973
+SHA512: cfafb0953c93ee9d461765ec69428fb81788075ad4f540c3f087aeb92b55a67cecdd07f24aac19a7b190997312e3cdba9da5a750dc49cea1e4f79c0c64f1e437
+Description: Allows simple local network file sharing.
+
+Package: webapp-manager
+Architecture: all
+Version: 1.4.3
+Priority: optional
+Section: admin
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 5661
+Depends: gir1.2-xapp-1.0 (>= 1.4), python3, python3-gi, python3-bs4, python3-configobj, python3-pil, python3-setproctitle, python3-tldextract, xapps-common, dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/webapp-manager_1.4.3_all.deb
+Size: 71144
+MD5sum: 222181e95c8a6d954907cf71944dbeba
+SHA1: c70dc85e7d5a5ccb3c665f3393a6f5d5344b08cd
+SHA256: 11f06e495c41d959cef101e2b946d72bb417fe369c19d9fd6495dff3de8dff4b
+SHA512: 386a39af1bd6153fb6ee9b93edda4b3ce71a35043ecfb4d35c6bff684fdc1ac873510fb5779bdd42dcd9c7cf54a4d69695d3c6feb0ed950e17e3921bcd919967
+Description: Web Application Manager
+ Launch websites as if they were apps.
+
+Package: xfce4-mime-settings
+Architecture: amd64
+Version: 4.20.1-2
+Priority: optional
+Section: xfce
+Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+Installed-Size: 4316
+Depends: exo-utils, libgarcon-common, xfce4-helpers, xfconf, libatk1.0-0t64 (>= 1.12.4), libc6 (>= 2.34), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.14.0), libcolord2 (>= 1.4.3), libexo-2-0 (>= 0.11.0), libfontconfig1 (>= 2.12.6), libgarcon-1-0 (>= 0.6.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.68.0), libgtk-3-0t64 (>= 3.21.5), libgtk-layer-shell0 (>= 0.5.1), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libwayland-client0 (>= 1.20.0), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxfce4ui-2-0 (>= 4.19.5), libxfce4util7 (>= 4.17.2), libxfconf-0-3 (>= 4.19.3), libxi6 (>= 2:1.2.0), libxklavier16 (>= 5.0), libxrandr2 (>= 2:1.2.99.3)
+Recommends: colord, x11-utils, xiccd
+Breaks: xfce4-settings
+Filename: pool/main/xfce4-mime-settings_4.20.1-2_amd64.deb
+Size: 559200
+MD5sum: 89314bd9fff8bc10b99dc5c7ddaea3cc
+SHA1: 2e36024095faa6bd152ae729e05551acc9b7d1e3
+SHA256: 6c8401be28b1cb0743b6f2eb6c1ccb0ce744f0d91203b1f5f170d8a36e11ee14
+SHA512: 67305dd97df0c378debc1da3b4599fc368b0cee0843178677a9f18b0a88466bcad72b13d99a273b4a2e589adb698d2c2fbf031958cb85b30a715542c70cdbc5d
+Homepage: https://docs.xfce.org/xfce/xfce4-settings/start
+Description: graphical application for managing Xfce settings (only mime-settings)
+ xfce4-settings is the Xfce settings manager front-end. It comes
+ with several different components for configuring application-independent
+ settings inside xfconf.
+ It contains multiple tools:
+  - xfce4-settings-manager (which replaces the old mcs settings manager),
+    which executes the various (provided) settings dialogs
+  - xfce4-settings-editor, a tool for editing ALL settings within xfconf, the
+    graphical counterpart of xfconf-query.
+  - xfsettingsd, a daemon for exporting XSettings to applications, and
+    providing special features like keyboard shortcuts, AccessX notification
+    and update of keyboard and mouse-pointer data.
+
