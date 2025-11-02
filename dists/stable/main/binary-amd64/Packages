@@ -221,6 +221,35 @@ Description: GnuPG archive keys of the Devubox-MX Linux archive
  The Devubox-MX Linux project digitally signs its repository Release files.
  This package contains the archive keys used for that.
 
+Package: dillo
+Architecture: amd64
+Version: 3.1.1+git20241006-0.1~mx25+1
+Priority: optional
+Section: web
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Original-Maintainer: Axel Beckert <abe@debian.org>
+Installed-Size: 2123
+Provides: www-browser
+Depends: wget, libc6 (>= 2.38), libfltk1.3t64 (>= 1.3.4), libjpeg62-turbo (>= 1.3.1), libmbedcrypto16 (>= 3.6.0), libmbedtls21 (>= 3.6.0), libmbedx509-7 (>= 3.6.0), libpng16-16t64 (>= 1.6.46), libstdc++6 (>= 4.1.1), libx11-6, zlib1g (>= 1:1.1.4)
+Recommends: perl, perl:any
+Filename: pool/main/dillo_3.1.1+git20241006-0.1~mx25+1_amd64.deb
+Size: 660472
+MD5sum: 2f11c15801c69852434f05512fb44a6a
+SHA1: d463814973fde5c73ca2e102a83f925a855a23f2
+SHA256: 620112358f745a169bca955718b3a81cd4712e670e28d8de5ef626791b6b40a1
+SHA512: 2cd7a635a67aeb4e803cd4de72c1543217e51d354f287afa7f0e7eefca3ed6e3b5f263152908cf75e9b8c36f4edcbd62f2498bf6142bf7d979387e2a4cbb96e9
+Homepage: https://github.com/dillo-browser/dillo
+Description: Small and fast web browser
+ Dillo 3 is a graphical multi-platform web browser known for its speed
+ and small footprint. It is based on version 1.3 of the Fast and Light
+ Toolkit (FLTK) in version 1.3
+ .
+ It aims to be small in resources, stable, developer-friendly, usable,
+ very fast, and extensible.
+ .
+ To run the included dillo-install-hyphenation script the recommended
+ perl packages need to be installed.
+
 Package: driveutility
 Architecture: all
 Version: 1.7.4
@@ -497,6 +526,26 @@ Description: GDK Pixbuf library (transitional package)
  or until that can be done, depend on
  libgdk-pixbuf-xlib-2.0-0 | libgdk-pixbuf2.0-0.
 
+Package: localsend
+Architecture: amd64
+Version: 1.17.0+58
+Priority: optional
+Essential: no
+Section: x11
+Maintainer: Tienisto <dev.tien.donam@gmail.com>
+Installed-Size: 30600
+Pre-Depends: libc6 (>= 2.31)
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Filename: pool/main/localsend_1.17.0+58_amd64.deb
+Size: 11709940
+MD5sum: 59e559f84fe892f067c232c5c2b9b075
+SHA1: eba64eb18930d0a832bea05b33f5263762e5647a
+SHA256: b0244b2c3eacb2a81d61b2662534d6036ab37ace10d6782da36b630c222fa04c
+SHA512: 564a194f9f347431140028fc1c9fdd3cdfcefbc9d083542896502230bfa68afd123b599d450b2b5b2ba62262ffb53b9d9e62be0fdb72889f60c4d2f2e2d03a44
+Homepage: https://localsend.org/
+Description: An open source cross-platform alternative to AirDrop
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+
 Package: maxautoclicker
 Architecture: amd64
 Version: 1.5
@@ -739,6 +788,28 @@ Homepage: https://github.com/trizen/Linux-DesktopFiles
 Description: perl module for parsing the Linux desktop files
  Very fast Perl module for parsing the Linux desktop files.
 
+Package: plank-reloaded
+Architecture: amd64
+Version: 0.11.153-1
+Priority: optional
+Section: x11
+Maintainer: Josh Ellithorpe <quest@mac.com>
+Depends: bamfdaemon, libgee-0.8-2, libgnome-menu-3-0, libwnck-3-0, libc6
+Conflicts: plank, libplank-common, libplank1
+Filename: pool/main/plank-reloaded_0.11.153-1_amd64.deb
+Size: 540524
+MD5sum: 81d35df78b5105bbed7721bdc285abac
+SHA1: 64afdfb37fa3381c31d5ab45ebae90a0903a5761
+SHA256: c7107f447d79db3844de9d2b11812a54e969cac86dc92dfe9c720969598ff373
+SHA512: d0fe69c7d4a6ec149889a1e6da8b890a13d0180b88b9d13c1687b491c0af0f0385bdee22b36b77a08d0b160e4ac42292701fa6800e947d2127050a1d97d6a1c6
+Homepage: https://github.com/zquestz/plank-reloaded
+Description: Elegant and simple dock.
+ Plank Reloaded is a fork of the original Plank project, providing a simple dock
+ for X11 desktop environments. While development began with a focus on Cinnamon,
+ we now actively support multiple desktop environments including MATE and Xfce.
+ Like its predecessor, Plank Reloaded aims to be the simplest dock on the
+ planet, providing just what a dock needs and absolutely nothing more.
+
 Package: python3-defer
 Architecture: all
 Version: 1.0.6+mint1
@@ -877,6 +948,26 @@ Description: Feature-rich screen recorder for X11 and OpenGL
  chosen directly from the user interface.
  .
  This package contains the main program.
+
+Package: touche
+Architecture: amd64
+Version: 1.0.7+ds1-1~mx21+1
+Priority: optional
+Section: misc
+Maintainer: SwampRabbit <swamprabbit@mxlinux.org>
+Original-Maintainer: José Expósito <jose.exposito89@gmail.com>
+Installed-Size: 1072
+Depends: dconf-gsettings-backend | gsettings-backend, gjs (>= 1.50), hicolor-icon-theme, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.26.0), libgtk-3-0 (>= 3.19.12), libstdc++6 (>= 6), libx11-6
+Filename: pool/main/touche_1.0.7+ds1-1~mx21+1_amd64.deb
+Size: 88532
+MD5sum: 41c4abce21c4ebae544a37ad163da442
+SHA1: af5acdebccf37c72e0b204aacafcf048aee80b75
+SHA256: 5eed15f511a61bfb11f744584007e5c52b3be767602ba58e188fbde403872123
+SHA512: 3cfea0cb236bdac85cce5261cf15667bcd403dd1657cd0bac8c9d2dd979def2b19e8d4d1cfaba2dd9484e8f214c47ec3dca0abda2b3b276bf2b191f39c95901b
+Homepage: https://github.com/JoseExposito/touche
+Description: The desktop application to configure Touchégg
+ Easily configure your touchpad and touchscreen multi-touch gestures
+ with this GTK graphical user interface.
 
 Package: touchegg
 Architecture: amd64
