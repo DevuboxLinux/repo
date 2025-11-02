@@ -221,6 +221,23 @@ Description: GnuPG archive keys of the Devubox-MX Linux archive
  The Devubox-MX Linux project digitally signs its repository Release files.
  This package contains the archive keys used for that.
 
+Package: devubox-goodies
+Architecture: all
+Version: 25.11.02-1~devubox+1
+Priority: optional
+Section: system
+Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
+Installed-Size: 129028
+Conflicts: desktop-defaults-mx-xfce-system, desktop-defaults-mx-xfce-desktop, desktop-defaults-devubox-desktop, desktop-defaults-mx-applications, desktop-defaults-devubox-applications, devubox-themes, devubox-scripts, ttf-devubox-font-collections
+Filename: pool/main/devubox-goodies_25.11.02-1~devubox+1_all.deb
+Size: 48869556
+MD5sum: cf2aec1aa0f595b596da4b1100cce165
+SHA1: 96281a83f7d0d7e90ad21e99927d0b257621958b
+SHA256: 0eae9fed4e94d9ef3ee69ddbdc709a50f80a1741b1f38b2839210437c5f6ed92
+SHA512: 195be8d6af9347b19eb4c9e005ee91182d317374954dbbedde640ce04e580079e88fa485bb5a8432f6084fc601bffd51cdf650ddf5a3454f9ae73639ae625739
+Homepage: http://devuboxlinux.github.io
+Description: openbox desktop defaults for Devubox (including scripts, themes, fonts, etc!)
+
 Package: dillo
 Architecture: amd64
 Version: 3.1.1+git20241006-0.1~mx25+1
