@@ -223,20 +223,21 @@ Description: GnuPG archive keys of the Devubox-MX Linux archive
 
 Package: devubox-goodies
 Architecture: all
-Version: 25.11.02-2~devubox+1
+Version: 25.11.03-1~devubox+1
 Priority: optional
 Section: system
 Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
-Installed-Size: 129028
-Conflicts: desktop-defaults-mx-xfce-system, desktop-defaults-mx-xfce-desktop, desktop-defaults-devubox-desktop, desktop-defaults-mx-applications, desktop-defaults-devubox-applications, devubox-themes, devubox-scripts, ttf-devubox-font-collections
-Filename: pool/main/devubox-goodies_25.11.02-2~devubox+1_all.deb
-Size: 48866020
-MD5sum: 94895b7071f4c80ba78d65f7359c330f
-SHA1: 056a0b04acfd4f316ccfdadec493eecfa63e3e1c
-SHA256: a0c2ecb2a37cf4da862666a3a20d32035bdcd5b15f1b7b6bb8294584d4ba8a76
-SHA512: 46305b17d800e80e76776d93d0e9c36d53121160aca585d14e830dd9eaccbec3c6db552304cd68666da87c31f623bbd7803550221f7d2b58b63bec0fb98a8684
+Installed-Size: 1696
+Recommends: ttf-devubox-font-collections
+Conflicts: desktop-defaults-mx-xfce-system, desktop-defaults-mx-xfce-desktop, desktop-defaults-devubox-desktop, desktop-defaults-mx-applications, desktop-defaults-devubox-applications, devubox-themes, devubox-scripts
+Filename: pool/main/devubox-goodies_25.11.03-1~devubox+1_all.deb
+Size: 160916
+MD5sum: 4b3dc281349b1e4749e047bbbd0c7f5c
+SHA1: ad3ec28c39e460335bfdc33dc069b2665cac6033
+SHA256: e7f25af23e704a0480713f49d8c4cb0765fa3b03d2011d939022cbebf2fbd923
+SHA512: 491e59697317c2ba103fd8bee9e14acd0b0782b3133523e436feb378c15ea4e049cb3caf0bef031b54a371167640962841e53d5d48fdb4f1ecb907f6c7664e68
 Homepage: http://devuboxlinux.github.io
-Description: openbox desktop defaults for Devubox (including scripts, themes, fonts, etc!)
+Description: openbox desktop defaults for Devubox (skel, scripts, and themes)
 
 Package: dillo
 Architecture: amd64
@@ -1027,6 +1028,23 @@ Description: indicator for the touchpad
  With touchpad-indicator you can enable or disable the touchpad with shortcuts
  or by clicking on menu. It also disables and then re-enables the touchpad when
  suspending and then resuming the computer.
+
+Package: ttf-devubox-font-collections
+Architecture: all
+Version: 25.11.03-1~devubox+1
+Priority: optional
+Section: fonts
+Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
+Installed-Size: 127352
+Filename: pool/main/ttf-devubox-font-collections_25.11.03-1~devubox+1_all.deb
+Size: 48661236
+MD5sum: 09661ddea16df771298dbe6a1f8e6d8f
+SHA1: 4d65caf5f513bca5d3ab4405e50ad382873bc918
+SHA256: 4cac9f8fa37ffd325efd9c81c5cf82df2e84e1d1426588d037dccc9536ba03aa
+SHA512: 188d30445a22e9dc45dcedd209e96d710642cc84c70cca760e824b485f10e0ed1cd339935980c865ea986820512e1448b6120ba7876151b9ed05dd4275fac294
+Homepage: http://devuboxlinux.github.io
+Description: openbox desktop defaults for Devubox (Additional font collections)
+Requires: ttf-devubox-font-collections
 
 Package: ventoy
 Architecture: all
