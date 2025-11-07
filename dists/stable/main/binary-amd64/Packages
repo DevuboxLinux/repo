@@ -183,18 +183,18 @@ Description: Circle flags in SVG format
 
 Package: deb-get
 Architecture: all
-Version: 0.4.5-1
+Version: 0.4.6-1~devubox+1
 Priority: optional
 Section: utils
 Maintainer: Martin Wimpress <code@wimpress.io>
-Installed-Size: 89
+Installed-Size: 128
 Depends: apt, apt-transport-https, bash (>= 4.4~), coreutils (>= 8.25~), curl, dpkg, gpg, grep, libc-bin, lsb-release, sed, sudo, wget
-Filename: pool/main/deb-get_0.4.5-1_all.deb
-Size: 24562
-MD5sum: 23e5a35e41d23a0030fabdd569509015
-SHA1: 43b8ad2ca53b9b9feaf705f38ec4539bbc53563a
-SHA256: c953c369825b291f415b4b1bd83b7b8a92ce63e0bd06a7de15441603d9f93892
-SHA512: 00e2250acf65f2ecf52d713659e769eb17767574e5f861c0ed9140ca04a0ecc45929c5f2b363fb095583b484a690b7ab3404345a52661edad4d1d5fa969f0927
+Filename: pool/main/deb-get_0.4.6-1~devubox+1_all.deb
+Size: 20412
+MD5sum: 0e1e27b4a50c327334deb24bdd1e2fc3
+SHA1: 754eaaff7f428720209b08783606afe27d66ffb4
+SHA256: 444fe8e5a87ef6f3cc98c732ed6798e02560983233a70538ed31346e1994ec99
+SHA512: a700ba54a2a7a48e3482013210705b4401e66a675b64011ef5e5f5a144b2cca259eee3dfde4d7ae37e81d1675d67e64f38b4e381ed0cfeed83cf58f38ef4e6f6
 Homepage: https://github.com/wimpysworld/deb-get
 Description: Script to "manage" .deb installs from 3rd party vendors/projects
  apt-get functionality for .debs officially published by 3rd party vendors and
