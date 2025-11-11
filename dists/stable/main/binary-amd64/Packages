@@ -340,19 +340,19 @@ Description: GnuPG archive keys of the Devubox-MX Linux archive
 
 Package: devubox-goodies
 Architecture: all
-Version: 25.11.03-1~devubox+1
+Version: 25.11.11-1~devubox+1
 Priority: optional
 Section: system
 Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
 Installed-Size: 1696
 Recommends: ttf-devubox-font-collections
 Conflicts: desktop-defaults-mx-xfce-system, desktop-defaults-mx-xfce-desktop, desktop-defaults-devubox-desktop, desktop-defaults-mx-applications, desktop-defaults-devubox-applications, devubox-themes, devubox-scripts
-Filename: pool/main/devubox-goodies_25.11.03-1~devubox+1_all.deb
-Size: 160916
-MD5sum: 4b3dc281349b1e4749e047bbbd0c7f5c
-SHA1: ad3ec28c39e460335bfdc33dc069b2665cac6033
-SHA256: e7f25af23e704a0480713f49d8c4cb0765fa3b03d2011d939022cbebf2fbd923
-SHA512: 491e59697317c2ba103fd8bee9e14acd0b0782b3133523e436feb378c15ea4e049cb3caf0bef031b54a371167640962841e53d5d48fdb4f1ecb907f6c7664e68
+Filename: pool/main/devubox-goodies_25.11.11-1~devubox+1_all.deb
+Size: 160960
+MD5sum: 4a6a3777634a3ef8e348b85baf96d11e
+SHA1: 41f46bba66435538575fe38a2858dc16749df162
+SHA256: 8b879a066297429265c4ad9cdfbcfa386fbc85e33a28625b6d9128b383e205bc
+SHA512: 4630c9be2127233918940aa55e748939181720d681634cf100ba7c049121491e544224f52857486f8ccf4ff31dfdc6056bf91b569f9dd037f95a884bd4ebf579
 Homepage: http://devuboxlinux.github.io
 Description: openbox desktop defaults for Devubox (skel, scripts, and themes)
 
