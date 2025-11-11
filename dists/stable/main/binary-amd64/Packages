@@ -844,6 +844,35 @@ Description: Dummy transitional package for libgranite7
  This package exists to satisfy dependencies for libgranite7.
  It pulls in libgranite-7-7 as provided by Debian.
 
+Package: libswitchboard-3-0
+Architecture: amd64
+Version: 8.0.2~r1400+pkg86~ubuntu8.1
+Priority: optional
+Section: libs
+Source: io.elementary.settings
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 89
+Depends: libadwaita-1-0 (>= 1.4~beta), libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0t64 (>= 2.38.0), libgtk-4-1 (>= 4.0.0)
+Filename: pool/main/libswitchboard-3-0_8.0.2~r1400+pkg86~ubuntu8.1_amd64.deb
+Size: 22136
+MD5sum: e9ab32977cc1601c8991480c9e966313
+SHA1: 0097072eb7d6c16bb3d8079f5c0e7e0bbb7d9288
+SHA256: 01462f9107a9e948268cb151ce044aad0155544a3c2415ac8f07ba02b4b2f92b
+SHA512: bd23b6c3f2b56bf82da6cb920b2f31230e6f18ce9fe39ffdae9ae163bf7de7905d06d785badd285674e0621ddda7367edd36c5f5ddcc9b77cc625f4c9b07db98
+Homepage: https://github.com/elementary/switchboard
+Description: Modular Settings Hub - shared libraries
+ Shared library to create plugs (settings panels) for Settings.
+ .
+ Settings is a modular system settings hub designed
+ for Pantheon desktop.
+ .
+ It features animated transitions, supports adding or
+ removing plugs (settings panels) without recompilation,
+ and follows the Human Interface Guidelines of
+ elementary OS.
+ .
+ This package contains the shared library required to run the plugs.
+
 Package: localsend
 Architecture: amd64
 Version: 1.17.0+58
@@ -1227,6 +1256,32 @@ Description: Elegant and simple dock.
  we now actively support multiple desktop environments including MATE and Xfce.
  Like its predecessor, Plank Reloaded aims to be the simplest dock on the
  planet, providing just what a dock needs and absolutely nothing more.
+
+Package: policykit-1
+Architecture: amd64
+Version: 124-2
+Multi-Arch: foreign
+Priority: optional
+Section: oldlibs
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Installed-Size: 34
+Depends: pkexec (>= 124-2), polkitd (>= 124-2)
+Filename: pool/main/policykit-1_124-2_amd64.deb
+Size: 13136
+MD5sum: 52fc3349b4727de318d5a951314e34c6
+SHA1: d64a613fd73cd6cc6f72d395d730ed3b83c08449
+SHA256: 34c2e0a213c9763af5dbfca81c9ebd57c6fa76ac97b39c0852ed4226d0c3f231
+SHA512: 7c95b6414810cc69d02001e12e4b9ea7513b1e93f2699ca16580a069c67c202275722d4ce16d7bd615f368616ea65fe48d5c110ee61275aefc833a8c2bff0a62
+Homepage: https://github.com/polkit-org/polkit/
+Description: transitional package for polkitd and pkexec
+ polkit is an application-level toolkit for defining and handling the policy
+ that allows unprivileged processes to speak to privileged processes.
+ It was previously named PolicyKit.
+ .
+ This transitional package depends on polkitd, the system service used by
+ polkit, and pkexec, a setuid program analogous to sudo. They were
+ historically packaged together, but have been separated so that users of
+ polkitd are not required to install pkexec.
 
 Package: python3-defer
 Architecture: all
