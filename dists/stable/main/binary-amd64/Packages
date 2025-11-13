@@ -844,6 +844,30 @@ Description: Dummy transitional package for libgranite7
  This package exists to satisfy dependencies for libgranite7.
  It pulls in libgranite-7-7 as provided by Debian.
 
+Package: liblz4-tool
+Architecture: all
+Version: 1.9.4-1
+Priority: optional
+Section: oldlibs
+Source: lz4
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Installed-Size: 13
+Depends: lz4
+Filename: pool/main/liblz4-tool_1.9.4-1_all.deb
+Size: 5484
+MD5sum: 2e1255cdf2a97a6557386202b1806480
+SHA1: 64c78ab08be496f36f8f036898346d237e1dacb2
+SHA256: 1e5044a1430fa4b22a5ce2dcf8d5f11251fa6dd3f84eec7b3c50e1a30b19646c
+SHA512: a96d43183aee2f6340e0a0cac287438271b1f68e3a39e5c3ba77d186068485a31da388c64f8121dc902db2551c4cc88ea94b0b6f04b358dcfabc5d21d67f2f52
+Homepage: https://github.com/lz4/lz4
+Description: Fast LZ compression algorithm library - transitional package
+ LZ4 is a very fast lossless compression algorithm, providing compression speed
+ at 400 MB/s per core, scalable with multi-cores CPU. It also features an
+ extremely fast decoder, with speed in multiple GB/s per core, typically
+ reaching RAM speed limits on multi-core systems.
+ .
+ This is a transitional package. It can be safely removed.
+
 Package: libswitchboard-3-0
 Architecture: amd64
 Version: 8.0.2~r1400+pkg86~ubuntu8.1
