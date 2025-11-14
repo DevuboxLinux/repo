@@ -745,6 +745,27 @@ Description: Glade interface engine for scripts
  Glade2script allows a script (Bash, Python or other) to display and
  interact with a GUI (created with Glade).
 
+Package: glava
+Architecture: amd64
+Version: 1.6.3-1~mx23+1
+Priority: optional
+Section: utils
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Original-Maintainer: Logix <logix@linuxuprising.com>
+Installed-Size: 203
+Depends: libglvnd-dev, libc6 (>= 2.34), libpulse0 (>= 0.99.1), libx11-6, libxext6, libxrender1
+Filename: pool/main/glava_1.6.3-1~mx23+1_amd64.deb
+Size: 55600
+MD5sum: e0cf707ae1abbad5d6f678c73f7f7024
+SHA1: 426426b05cbbbf78c2ea8bc24774feb36a6eae6c
+SHA256: 6aaa49cd32d0939fa82118491113b407624c806c0c925f4c47ba254dcb0feeea
+SHA512: a99213a8b6e72c6e858c7bd60ad6a2533191793171bab339b1b2d971fb347880d78426f0aaaa016eb59b0213f93cc509a751ac99a3f88e60b7274541ac760190
+Homepage: https://github.com/wacossusca34/glava
+Description: OpenGL audio spectrum visualizer
+ GLava is an OpenGL audio spectrum visualizer.
+ Its primary use case is for desktop windows or
+ backgrounds.
+
 Package: gnome-online-accounts-gtk
 Architecture: amd64
 Version: 3.50.7+gigi
@@ -763,6 +784,30 @@ SHA512: a3be3df7022e0196d5562e9bc6669d2497e445fbde83dae94e297562eb5773d4f6f5aaed
 Homepage: https://github.com/xapp-project/gnome-online-accounts-gtk
 Description: GUI Utility for logging into online accounts for the
  purpose of syncing mail, contacts and remote filesystems.
+
+Package: gnome-ppp
+Architecture: amd64
+Version: 0.3.23-2.1mx19
+Priority: optional
+Section: net
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 403
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglade2-0 (>= 1:2.6.4-2~), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.8.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libx11-6, libxml2 (>= 2.6.27), wvdial
+Filename: pool/main/gnome-ppp_0.3.23-2.1mx19_amd64.deb
+Size: 68712
+MD5sum: af1d0e8ec12f1ab887d64180aad6496b
+SHA1: 9edeb71f52c96551a4bd03bbf2ab5afecb5880d7
+SHA256: a192a365a53b90d21b4d8ac31308c3e40c89850ed209b1ab66682206440162cd
+SHA512: 6cba681a4c0dc3b2a05e364eb7669b78897a029ff76e8a4721432994944624fc53e893cfb0e42584d4a6655ceaf2347113a5593209e2acc4c01ba550ed4aad07
+Description: modem internet connection tool for the GNOME Desktop
+ GNOME PPP is an easy to use graphical dialup connection configuring
+ and dialing tool with system tray icon support.
+ .
+ It uses GNOME/GTK+ for its graphical interface and integrates well
+ in GNOME desktop environment, but it can be used in other environments.
+ .
+ It also uses WvDial dialer as its backend, providing simple configuration
+ via config files. You can also use plain wvdial if you don't have X running.
 
 Package: hypnotix
 Architecture: all
@@ -980,6 +1025,29 @@ Description: GDK Pixbuf library (transitional package)
  or until that can be done, depend on
  libgdk-pixbuf-xlib-2.0-0 | libgdk-pixbuf2.0-0.
 
+Package: libglade2-0
+Architecture: amd64
+Version: 1:2.6.4-2.4
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: libglade2
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 177
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.8.0), libpango-1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4)
+Filename: pool/main/libglade2-0_2.6.4-2.4_amd64.deb
+Size: 81220
+MD5sum: 927395f04ad301a32cd1ce29b5781932
+SHA1: 8479d57e3eec5fc75eb969df403cd5d47c9fad30
+SHA256: 30ad2dd61f0c47d6a76c22514cc5c2e9e99fb424176d464ce856c6ccff2ca34d
+SHA512: 17740212db55cc146ea11301cdf4fb57bddd0f729b9b0f388f213d66c6f74b0d26a8b87ed30c1e9c7d7e06cce2199b53925e5aaf1540a1145449ce4b2de04fa9
+Description: library to load .glade files at runtime
+ This library allows one to load externally stored user interfaces into
+ programs. This allows alteration of the interface without recompilation
+ of the program.
+ .
+ The interfaces can also be edited with GLADE.
+
 Package: libgranite7
 Architecture: all
 Version: 7.6.1-2
@@ -997,6 +1065,27 @@ SHA512: 0a36f2ffeed62da0e83edcbeea2331457086d23ad73c5e24e79edf7e1cdff1b722fd35e8
 Description: Dummy transitional package for libgranite7
  This package exists to satisfy dependencies for libgranite7.
  It pulls in libgranite-7-7 as provided by Debian.
+
+Package: libgtkglext1
+Architecture: amd64
+Version: 1.2.0-11
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: gtkglext
+Maintainer: Gert Wollny <gewo@debian.org>
+Installed-Size: 475
+Depends: libc6 (>= 2.4), libgl1, libglib2.0-0 (>= 2.16.0), libglu1-mesa | libglu1, libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libxmu6
+Filename: pool/main/libgtkglext1_1.2.0-11_amd64.deb
+Size: 96168
+MD5sum: cd55c905954e66cb2a397cd0e102fc8b
+SHA1: 60d512930ba5e192ee0748f730d7b7ca28de99b9
+SHA256: 2e89758eba7ea10f9b85ca0044d6fd152dfe376a2ee053ebab2618dbaa9eab55
+SHA512: f6d33fc8e9d3efd3c7d7da24b5d0f965a4784a67d136a93b232b9eab049307b321aeab5cff6fc2c91d7d6e3cd7a2283f12d05e55e3722f8c5c87fe6c75199069
+Homepage: http://projects.gnome.org/gtkglext/
+Description: OpenGL Extension to GTK+ (shared libraries)
+ GtkGLExt provides the GDK objects to support OpenGL rendering in GTK+,
+ and GtkWidget API add-ons to make GTK+ widgets OpenGL-capable.
 
 Package: liblz4-tool
 Architecture: all
@@ -1133,6 +1222,24 @@ Description: automate and emulate your mouse clicks.
  https://sourceforge.net/projects/maxautoclicker
  .
  https://maxautoclicker.blogspot.com
+
+Package: mictray
+Architecture: amd64
+Version: 0.3.1-1~ubuntu20.04.1
+Priority: optional
+Section: sound
+Maintainer: Mystic-Mirage <mm@m10e.net>
+Installed-Size: 71
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.21.5), libnotify4 (>= 0.7.0), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1)
+Filename: pool/main/mictray_0.3.1-1~ubuntu20.04.1_amd64.deb
+Size: 18180
+MD5sum: 310f1e70a18dfbf433741099fa02cf36
+SHA1: 7d4765cd8afd7b02eb66e87d23f9eeec489f9e87
+SHA256: bae2bcc62cf5e42f3e8a844fa392f8b50f27f605268310993e5a613d6ef2ec8f
+SHA512: 6f46f6c2769fbd0d5331beb75daeeaca372daa9a0f146ead960587bea0c28491811e6c3a8970105af7d42c9f6af2f9651e20d0b140b29df490721be4086da00e
+Homepage: https://github.com/Junker/mictray
+Description: Lightweight application which lets you control the microphone state and volume from system tray
+ MicTray is a Lightweight application which lets you control the microphone state and volume from system tray
 
 Package: minitube
 Architecture: amd64
@@ -1379,6 +1486,22 @@ Description: GUI tool for configuring application settings in Openbox
   A graphical tool for configuring the per-application settings
   (window matching) in the Openbox window manager.
 
+Package: obkey
+Architecture: all
+Version: 22.10.16
+Priority: optional
+Section: openbox
+Maintainer: Jerry Bond (stormyjerry@gmail.com)
+Installed-Size: 160
+Depends: python3:any
+Filename: pool/main/obkey_22.10.16_all.deb
+Size: 26392
+MD5sum: 11f4b941527b6f60801c9bfaff184b79
+SHA1: 4e92ea033cc8936ae19f4070101de7bc239bfefd
+SHA256: 84da991033786d52ed2853b7a6095f96a2573ba72e1a25b18a5bcb633790d32b
+SHA512: e6d820168b44a5df1ea8a5e1209143a78b6eb70d26181c3f13f3c1a91dcf1af3122257b3a965add3b0fc16d108f2e2953ffb57106d0ce89d63a7c7c0c381f56a
+Description: An app to manage Openbox keys
+
 Package: obmenu-generator
 Architecture: all
 Version: 0.90+git20211116-1~mx21+1
@@ -1416,6 +1539,26 @@ SHA512: 4594b6bc490b9e149eb1a9c01fb81b7d1231cb5e05fad83872a558f193960827cd99a280
 Homepage: https://crunchbangplusplus.org/
 Description: various Openbox pipemenus.
  A repackaging of https://github.com/0x10/obmenu2
+
+Package: openbox-menu
+Architecture: amd64
+Version: 0.8.0+hg20161009-3.1
+Priority: optional
+Section: x11
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 45
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.8.0), libmenu-cache3 (>= 0.4.0), openbox, lxmenu-data | gnome-menus | libgarcon-common
+Filename: pool/main/openbox-menu_0.8.0+hg20161009-3.1_amd64.deb
+Size: 15472
+MD5sum: 34af571a65372735fa79585b4f701f03
+SHA1: 11eedc60165956eb7837575ce454473cd238f6d1
+SHA256: 81d63760b9aac4abbf27a4ec71d939708cc5c9b531e18c5f0efecd88ea5b7c81
+SHA512: 6be20d8438462198683d81ac812bc4d42f66f3e4db51c5feddaeae2989b5fdb2c983d4abe3d85ee85bb37a330bbbd7ddf5d463a1607cac4ee7ca2110db2e73e7
+Homepage: https://bitbucket.org/fabriceT/openbox-menu
+Description: openbox pipe-menu to display entries in *.desktop files
+ openbox-menu is a pipemenu for the openbox window manager. It provides
+ a dynamic menu listing of installed applications. Most of the work is
+ done by the LXDE library menu-cache.
 
 Package: os-uninstaller
 Architecture: all
@@ -1739,6 +1882,24 @@ Homepage: https://github.com/hakandundar34coding/system-monitoring-center
 Description: Multi-featured system monitor
  Provides information about CPU/RAM/Disk/Network/GPU performance, sensors,
  processes, users, services and system.
+
+Package: thunar-sendto-shredder
+Architecture: all
+Version: 0.01-1
+Priority: optional
+Section: utils
+Maintainer: Dave M <dave.nerd@gmail.com>
+Installed-Size: 139
+Depends: perl, libgtk3-perl, thunar
+Filename: pool/main/thunar-sendto-shredder_0.01-1_all.deb
+Size: 24192
+MD5sum: debf5686b40ae83d281435dfc630c8f4
+SHA1: 270ed7fb16cf494102b1a28a6b231c08cc3c408b
+SHA256: a24004bff309e908b182687d5b4506d83ec623df5595414fde36a2b3f41229fa
+SHA512: b6a915822d778f1dbbddf3510da5a58afa7415c04b23b143eff4d4b401259a563e5fff678258aab55f005157325991bbc557b45b264229eeeaf449f00f1c9101
+Homepage: https://github.com/dave-theunsub/thunar-sendto-shredder
+Description: Adds context menu to shred files in Thunar file manager
+ thunar-sendto-shredder adds a context menu option to securely erase files
 
 Package: touche
 Architecture: amd64
