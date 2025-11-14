@@ -1,3 +1,25 @@
+Package: adapta-gtk-theme
+Architecture: all
+Version: 3.95.0.11-2
+Priority: optional
+Section: x11
+Maintainer: Franciscarlos Soares <prof.franciscarlos@gmail.com>
+Installed-Size: 19385
+Depends: fonts-noto, fonts-roboto, gtk2-engines-murrine, gtk2-engines-pixbuf
+Filename: pool/main/adapta-gtk-theme_3.95.0.11-2_all.deb
+Size: 708816
+MD5sum: 3827dc69231b9ebe61ad828a124200ad
+SHA1: 56f60a0d3a604749cd3a4e35eecbe3f1fc88c6e9
+SHA256: 90114674798bc0f110034e13903cd58c1133a948e17c8dc0c3e69ff15985a654
+SHA512: 233af1c4255e57e43c0ba26d71c0e1d450881a19bf3f0dc2d994054a4415cdc0cc0ed7aa0135e1d45d4076802a196b7c0413f0112d36c3b2ef6b7992c878b422
+Homepage: https://github.com/adapta-project/adapta-gtk-theme
+Description: Adaptive Gtk+ theme
+ Adapta is an adaptive theme based on Material Design Guidelines for GNOME/GTK+
+ based desktop environments.
+ .
+ Adapta is available in four variants:
+ Adapta, Adapta-Eta, Adapta-Nokto and Adapta-Nokto-Eta.
+
 Package: apart-gtk
 Architecture: amd64
 Version: 0.29
@@ -238,6 +260,103 @@ SHA512: 5b82ef31db4843e9752d93885d0186902746c89d0871b2bbda35fe0264f592f9c669474f
 Description: Bulk Renamer
  Utility application used to rename multiple files.
 
+Package: bunsen-papirus-icon-theme
+Architecture: all
+Version: 13.0-1
+Priority: optional
+Section: x11
+Maintainer: John Crawley <john@bunsenlabs.org>
+Installed-Size: 4536
+Depends: papirus-icon-theme, librsvg2-common
+Recommends: gtk-update-icon-cache
+Filename: pool/main/bunsen-papirus-icon-theme_13.0-1_all.deb
+Size: 122764
+MD5sum: e0666a2267d36dfb5b890cca4382007b
+SHA1: 6bea1c09b37376658e3858e852686e0957e311c7
+SHA256: 4af7f51f4fa7517317d8079db273951b9c1fb6802db20bb2ff2e5ac13041b5fc
+SHA512: b25106048fcff97ab8e8841013fc6e894c2b59a1bd50496990cfaac4b3ab0224e534615b0dafb231a9a09ab9a65a7c661855bf775149375b8d0df0c7ae42a729
+Homepage: https://github.com/BunsenLabs/bunsen-papirus-icon-theme
+Description: Some substitute icons for the Papirus icon theme.
+ The default blue Papirus folder icons have been replaced by
+ black, grey or bluegrey icons, and some others added.
+ This theme inherits Papirus and depends on papirus-icon-theme.
+
+Package: bunsen-themes-base
+Architecture: all
+Version: 13.1-1
+Priority: optional
+Section: x11
+Source: bunsen-themes
+Maintainer: John Crawley <john@bunsenlabs.org>
+Installed-Size: 27
+Depends: bunsen-yaru-gtk
+Recommends: bunsen-images-base
+Suggests: openbox, lightdm-gtk-greeter, bunsen-themes
+Breaks: bunsen-themes (<< 13.1-1)
+Filename: pool/main/bunsen-themes-base_13.1-1_all.deb
+Size: 18188
+MD5sum: 253b34c2d68c4e3fd80bc36d414ea41b
+SHA1: 72d768c32e8ce3291ee2651c9f5e5c55b5ba4656
+SHA256: a9d6eb94eb07bb0927f93e6311aa88fa697001d1beb4d3440d3abc3a0b814ef0
+SHA512: aebc83c462caeaacfcf2244a870947bbdd029f2fbd2f739ba3182fe141c59798f87d2ad17334171f5a113686b5ea9eff4e5ccf66ea1de9e5936e3a15a036e457
+Homepage: https://github.com/bunsenlabs/bunsen-themes
+Description: GTK, Openbox, and other themes for BunsenLabs on Debian
+ This package provides only the themes used in the default desktop.
+ The package bunsen-themes provides some alternative themes.
+ Made by hhh and others from the BunsenLabs forums.
+
+Package: bunsen-themes
+Architecture: all
+Version: 13.1-1
+Priority: optional
+Section: x11
+Maintainer: John Crawley <john@bunsenlabs.org>
+Installed-Size: 16725
+Depends: bunsen-themes-base, gtk2-engines-murrine, gtk2-engines-pixbuf, libgtk-3-0 (>= 3.22.11)
+Recommends: bunsen-images-base
+Suggests: openbox, lightdm-gtk-greeter, bunsen-images, bunsen-icons-base
+Breaks: bunsen-themes-base (<< 13.1-1), bunsen-themes-extra (<< 12.3)
+Replaces: bunsen-themes-base (<< 13.1-1), bunsen-themes-extra (<< 12.3)
+Filename: pool/main/bunsen-themes_13.1-1_all.deb
+Size: 535476
+MD5sum: f2d2e1089f4967f1fb7b76232cbecfd7
+SHA1: 1712ffec975dce0211457447bdf04132b8c8fcee
+SHA256: 2654f57892b34f4d343419e3ba43655e407c8fe54707245ed2ab10d88f99f841
+SHA512: c523183ea0a98f1c6a0316ea9dd97c543b577de5845460b3953038c62a16f6f7f6ff55b97adef42919d354666022d3009b310122dce7e8efa0abf2ff6c54c593
+Homepage: https://github.com/bunsenlabs/bunsen-themes
+Description: GTK, Openbox, and other themes for BunsenLabs on Debian
+ This package provides themes used in the default desktop and in the
+ preset theme sets that come with BLOB (package bunsen-blob).
+ Made by hhh and others from the BunsenLabs forums.
+
+Package: bunsen-yaru-gtk
+Architecture: all
+Version: 13.0.1-1
+Priority: optional
+Section: x11
+Maintainer: hhh <hsumen@bunsenlabs.org>
+Installed-Size: 8449
+Depends: gtk2-engines-pixbuf, gtk2-engines-murrine, libglib2.0-bin
+Recommends: gnome-themes-extra
+Filename: pool/main/bunsen-yaru-gtk_13.0.1-1_all.deb
+Size: 377416
+MD5sum: 26fae56ec4577d29796ba0af3c9b7e08
+SHA1: a9266b96983d6756dd9000de501e874ef09478dc
+SHA256: e02ea3115a4c6d7ab3a60515d96b9affeca77d4ed8f6f0b98a7ffb3457dcf776
+SHA512: 8fe7b4dcb246e2e4e5006d30b9c4e693bab17ff4663601743f034aad2e9d72c768f4b42351dd327069fec418855a0a5ed124763aedfb3a95925b248e0218fe4b
+Homepage: https://github.com/bunsenlabs/bunsen-yaru-gtk
+Description: Yaru GTK theme from the Ubuntu Community
+ This is the theme, better than a burrito, that is shaped by the community
+ on the Ubuntu discourse.
+ .
+ This package contains the GTK+ 2 and 3 theme parts
+ .
+ If you want to follow development, more information here:
+ https://community.ubuntu.com/c/desktop/theme-refresh.
+ .
+ Openbox and xfce4-notifyd themes added by hhh <hsumen@bunsenlabs.org>
+ for use in BL carbon.
+
 Package: captain
 Architecture: all
 Version: 1.0.7
@@ -280,6 +399,41 @@ Description: lightweight and fast battery icon status and more
  A regular user can (re)define custom system's behaviour, like performing
  graceful shutdown on critical status, by user-defined thresholds and commands
  on low power/critical.
+
+Package: cbpp-icon-theme
+Architecture: all
+Version: 13.0
+Priority: optional
+Section: x11
+Maintainer: Ben Young <computermouth@crunchbangplusplus.org>
+Installed-Size: 78053
+Filename: pool/main/cbpp-icon-theme_13.0_all.deb
+Size: 16455340
+MD5sum: c7527160b76ec6a93224e990a020a379
+SHA1: 920dbf2e7722fcfacc41159f1e0c6926a01ad53b
+SHA256: 0a0c024e8fee981c5c518e4b0d32c7deb9618102e2828e248e39e359654ec246
+SHA512: 0d36de7e3e4eca3145abd80e00becbaeefaa7a81c012f805828e3aa7e3679b3d742db7c5aab333f2fd761835d8950d3e0791cfe198a1545c6b4d9a7a80cdadf0
+Homepage: https://crunchbangplusplus.org
+Description: Icon theme with tilish style, by Tiheum
+ Default icon themes for use with CrunchBangPlusPlus.
+
+Package: cbpp-ui-theme
+Architecture: all
+Version: 13.0
+Priority: extra
+Section: x11
+Maintainer: Ben Young <computermouth@crunchbangplusplus.org>
+Installed-Size: 2511
+Depends: gtk2-engines-murrine
+Filename: pool/main/cbpp-ui-theme_13.0_all.deb
+Size: 99188
+MD5sum: f4d583b8dc573200342cccf327c791c4
+SHA1: bca3e44317d796df75921ee5499fe3f5d8be3ab5
+SHA256: 44eb2def8da7ebd579dcdd8d629fd6ce411e9d73ec19f952a494e23ef9a56a69
+SHA512: 5d4fd68459b6e2eab317145d196e200ed6d36732e1852901c92c58e618e7c6f227c6b0f548a83832313857fa75c66b0e5693c82370e2cd734618f1f10216c88c
+Homepage: https://crunchbangplusplus.org
+Description: default theme for CrunchBangPlusPlus
+ Default GTK+ and Openbox themes for CBPP.
 
 Package: circle-flags-svg
 Architecture: all
@@ -340,19 +494,19 @@ Description: GnuPG archive keys of the Devubox-MX Linux archive
 
 Package: devubox-goodies
 Architecture: all
-Version: 25.11.14-1~devubox+1
+Version: 25.11.14-2~devubox+1
 Priority: optional
 Section: system
 Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
 Installed-Size: 1724
 Recommends: ttf-devubox-font-collections
 Conflicts: desktop-defaults-mx-xfce-system, desktop-defaults-mx-xfce-desktop, desktop-defaults-devubox-desktop, desktop-defaults-mx-applications, desktop-defaults-devubox-applications, devubox-themes, devubox-scripts
-Filename: pool/main/devubox-goodies_25.11.14-1~devubox+1_all.deb
+Filename: pool/main/devubox-goodies_25.11.14-2~devubox+1_all.deb
 Size: 163332
-MD5sum: b305b15ceb92ef7c3413355a1c9a34bd
-SHA1: f060a13ad7015a104ec765c6dadda87374a231cd
-SHA256: 53b80189eaaf28d4a621f0f8861479a729f1fdb40485f545c135f320d497df8b
-SHA512: fbe2cd67ffef09b95b1acdd360b0a9881d401824aaa700147c0e36eec02ee846f743ce9a5ca8bc3badebbc95d8235314c17f5f95e60fee3a2eb648ef96f966e1
+MD5sum: 3ab51a4745c4f4fdec83cf1f4343e6c1
+SHA1: e064a97ac4d6201e3b5146d77a9646257bf45707
+SHA256: 445559c13dfa2b8e558a4393ade7979cd49d01c3a236d94674365fc88a4c155c
+SHA512: e627f7ef9c51f50f63cfde9e7fcc1f3115c1bf1749ac643326cc4aeb65f3e614bb390e75e38d0c4364ae2d48ab99be3381145ac066d77626574414cbbbe481ae
 Homepage: http://devuboxlinux.github.io
 Description: openbox desktop defaults for Devubox (skel, scripts, and themes)
 
@@ -934,6 +1088,28 @@ Homepage: https://localsend.org/
 Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
+Package: materia-gtk-theme
+Architecture: all
+Version: 20210322-1
+Priority: optional
+Section: x11
+Maintainer: Debian Desktop Themes Team <team+desktop-themes-team@tracker.debian.org>
+Installed-Size: 8370
+Recommends: gnome-themes-extra, gtk2-engines-murrine, libgtk-3-common, libgtk2.0-common, libgtk-4-common
+Filename: pool/main/materia-gtk-theme_20210322-1_all.deb
+Size: 234200
+MD5sum: 2c3de5a58319544f5763a16b7c1d7bbc
+SHA1: de69f14de36e3d683b29bdbcb0fc8f809929edf4
+SHA256: b1e2dc1eecba05879ed8b2a4d2d5f2fadfb1552da46e52b88d4ea86168731779
+SHA512: 9417acfe31fc5c66c803b18be45ecfc3b4c8486b4ec6d4d00b957c85faf735febc006c85d90d9de9182cdcb1171a002d6fb0dca47a81970486248379fc475b90
+Homepage: https://github.com/nana-4/materia-theme
+Description: Material Design theme for GNOME/GTK+ based desktop environments
+ Materia (formerly Flat-Plat) is a Material Design theme for GNOME/GTK+ based
+ desktop environments.It supports GTK+ 3, GTK+ 2, GTK 4, GNOME Shell, Budgie,
+ MATE, Unity, LightDM, GDM, Chrome theme, etc.
+ .
+ Also Materia has compatibility with oomox theme designer.
+
 Package: maxautoclicker
 Architecture: amd64
 Version: 1.5
@@ -1184,6 +1360,25 @@ Description: network management framework (connection configuration editor)
  This package contains nm-connection-editor which allows users to edit
  NetworkManager connection settings.
 
+Package: obapps
+Architecture: all
+Version: 0.2.5
+Priority: extra
+Section: x11
+Maintainer: Ben Young <computermouth@crunchbangplusplus.org>
+Installed-Size: 43
+Depends: python3:any, python3-xlib, wxpython-tools
+Filename: pool/main/obapps_0.2.5_all.deb
+Size: 8304
+MD5sum: c2d726dcfe6e7c020c115672e61472bd
+SHA1: 4cc889a59e641b145de9e945107e4390b02f477e
+SHA256: cbe3f7c109c2977ec0ac9c701849602cd56a12aeabdff19e728b01839d23f832
+SHA512: 9a497c2d8b247dea72b6a0c790c9a40e72a18fb48edf04ec6d6e1436177c6f10b777eee2a668a7ff3eb8f6cbbe7eeaea2a794564fa5093b3df696fbad4c120de
+Homepage: http://sourceforge.net/projects/obapps/
+Description: GUI tool for configuring application settings in Openbox
+  A graphical tool for configuring the per-application settings
+  (window matching) in the Openbox window manager.
+
 Package: obmenu-generator
 Architecture: all
 Version: 0.90+git20211116-1~mx21+1
@@ -1203,6 +1398,24 @@ Homepage: https://github.com/trizen/obmenu-generator
 Description: Menu generator for Openbox
  A fast pipe/static menu generator for the Openbox Window Manager, with support
  for icons.
+
+Package: obmenu
+Architecture: all
+Version: 13.0
+Priority: extra
+Section: misc
+Maintainer: Ben Young <computermouth@crunchbangplusplus.org>
+Installed-Size: 70
+Depends: python3, python3-gi
+Filename: pool/main/obmenu_13.0_all.deb
+Size: 11824
+MD5sum: 173a08e5b2ba12b0d48311ee901f3664
+SHA1: 062add606a88fcd67391c9964e31a84e7b658f92
+SHA256: 5cbd03eed9bdba863317c293e589887c105bd0fd67468d1217dc175a28eed045
+SHA512: 4594b6bc490b9e149eb1a9c01fb81b7d1231cb5e05fad83872a558f193960827cd99a280e5a8c28d2c7f9396238417fce94908c665aff5363b353d126be3def3
+Homepage: https://crunchbangplusplus.org/
+Description: various Openbox pipemenus.
+ A repackaging of https://github.com/0x10/obmenu2
 
 Package: os-uninstaller
 Architecture: all

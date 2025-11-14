@@ -1,37 +1,37 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Thu, 13 Nov 2025 16:04:51 +0000
+Date: Fri, 14 Nov 2025 02:50:10 +0000
 Description: This is the Devubox-MX repository
 Label: Devubox-MX Repository
 Origin: Devubox-MX Repository
 Suite: devubox
 Version: 6.0
 MD5Sum:
- 3bc4c7430e982e6b5c43add80c295ba7            42968 Contents-amd64.gz
- a19c8dceb65c431117bbceda5dfc8975              227 Release
- 3bc4c7430e982e6b5c43add80c295ba7            42968 main/Contents-amd64.gz
- bb1d03408f27b8dd9c00f7de2f8ce7d5            88120 main/binary-amd64/Packages
- f0e08850a27aa3739d9c9222d3a45f96            34091 main/binary-amd64/Packages.gz
+ 1ce8dfb2cad9265e3d936f2e1e7ddc48           182299 Contents-amd64.gz
+ 32bd55481a29d806da40dc971a640fdf              227 Release
+ 1ce8dfb2cad9265e3d936f2e1e7ddc48           182299 main/Contents-amd64.gz
+ bd870ba9056834126fe8b5b666f58b43            97144 main/binary-amd64/Packages
+ a41065869a4d597a5f395eea6dbcdb7d            37501 main/binary-amd64/Packages.gz
  8cdbb1cd78dc932601f957f95e203f7a              171 main/binary-amd64/Release
 SHA1:
- f6b21b035ffe498c507fa958e43480a09a57eead            42968 Contents-amd64.gz
- 6bcfa917ec8adfd2e9a455e84adefc1dd3994a98              227 Release
- f6b21b035ffe498c507fa958e43480a09a57eead            42968 main/Contents-amd64.gz
- 3d2b3c6618e1ed0c433944233a40aa24a655bad2            88120 main/binary-amd64/Packages
- 5fae10ef4515123fc9ba404fd6c25b17e814a1cc            34091 main/binary-amd64/Packages.gz
+ fb8709aa3a3f57675d56cfbd9fcd5c02877f12d1           182299 Contents-amd64.gz
+ 9494cd8ac80621783fcc258579f325bfd1a9771c              227 Release
+ fb8709aa3a3f57675d56cfbd9fcd5c02877f12d1           182299 main/Contents-amd64.gz
+ 4037cc57099f213709fff29a4de356c9bf073867            97144 main/binary-amd64/Packages
+ e0d8326c4b601f2d393935eac096a6effb1af99f            37501 main/binary-amd64/Packages.gz
  db00c5a2f75f92025f2e0db19b223519a05d5443              171 main/binary-amd64/Release
 SHA256:
- 02e0ff0aaee16ccfebf675f7cf994ae85d1bd50e1ee3fd07cfa0f1889ed0ee04            42968 Contents-amd64.gz
- d0d8c92757d38be32a97da395cba690db2ccc72bed1b964ae7723c1707b21e0e              227 Release
- 02e0ff0aaee16ccfebf675f7cf994ae85d1bd50e1ee3fd07cfa0f1889ed0ee04            42968 main/Contents-amd64.gz
- 15389885d1a3195932322239b6509f12e5cafa31a4513cc77a7e7f10363ce6d0            88120 main/binary-amd64/Packages
- 356297aeb40a7909518d22a3fd38a38be5f5d0cc9fa0ed45372be4430547f278            34091 main/binary-amd64/Packages.gz
+ dd0cc26dfc707e2bde44cdaec07c5a60af65e2cd76b7c4782f60f724d700cd2a           182299 Contents-amd64.gz
+ b274c2c499199caa15071c8f9970cc5107d418bebcb8d5027620a8e76968597a              227 Release
+ dd0cc26dfc707e2bde44cdaec07c5a60af65e2cd76b7c4782f60f724d700cd2a           182299 main/Contents-amd64.gz
+ d9d948e7a1305495a7e9c06a5ce7960217019b9dd437e40c44c9fcd4174171d4            97144 main/binary-amd64/Packages
+ d9c254722cc5af3662e8b9417165c3aa9b8aea3a9e3fbe49c50051cef5428192            37501 main/binary-amd64/Packages.gz
  ce4b45943ff85ac4f01de35259204803bb5d2ef846f0551314e4277061a0f701              171 main/binary-amd64/Release
 SHA512:
- 9018bd360a39be6202a0ee0e7f05cf78dd31bad2dd89f6a109a59ea86d51b0be8290794d4574c511b239851b7288a848d62da8f0ed17923eb172b32734661b1e            42968 Contents-amd64.gz
- 2a47b4c4b91fa5f0f5e3a2bbd29b94aef1719c096040a880870c6deb90cc19c3041ea5c4ee9a4a4efd02e541f42f760307fd6ead3e56b3a9ab2d06d63cc2d0b7              227 Release
- 9018bd360a39be6202a0ee0e7f05cf78dd31bad2dd89f6a109a59ea86d51b0be8290794d4574c511b239851b7288a848d62da8f0ed17923eb172b32734661b1e            42968 main/Contents-amd64.gz
- 1150e3f5343c461e387c518b285a36b802b36156134e96956ee6bcfa14c54d63a71ff01178441ae3018339c7b406c94a8ebc6f6251ee053dff3ccb561cd903e5            88120 main/binary-amd64/Packages
- 8f26e3090e0ae57f0b2f56c5eb7b16d0ea11149744c59f7aa89e49f7d5e04c08574ad99b37ac1876db7efad6161d5fc864174e7e5e567e85d6abe16a01ed90a4            34091 main/binary-amd64/Packages.gz
+ 22063cca7ed625b3399541f9b80e78600244bac8d0ba9b7973abe9049562333e0c10d151f09831cd0252a5b40896863cdd82401094e01d34132d2efeecd4944d           182299 Contents-amd64.gz
+ be6b5c3389a66e6b0b50af9eb1d462cccb684a60a400c40a4beb76fd8a939db30ee27b729a257aeb99cd49647a05a89ae93d36c908606637512fa45dad8d67d4              227 Release
+ 22063cca7ed625b3399541f9b80e78600244bac8d0ba9b7973abe9049562333e0c10d151f09831cd0252a5b40896863cdd82401094e01d34132d2efeecd4944d           182299 main/Contents-amd64.gz
+ f68d6105a22dca3a688be9fe05c25f1bf4959aecc1cbde961e262dd0db3522262e46b0854e243541eeffa87b1ddc3745b312de3c3b05ca3113b93b19619c5391            97144 main/binary-amd64/Packages
+ b2f255ccf964267a9377d028285f0840acf0162593b5017f19695e988d9496ce10a82e92a10fa5952238e6083006314dcbdb72eb425ee2688a9d0bc78ba20019            37501 main/binary-amd64/Packages.gz
  ed6ca44ecb918550ec3b119da2228f27b93de5d1c498c74b9f82750f69f67f133d337011d43503836c05e798f32a949fa9c8efa699040329dd2e78b3d9e90e7b              171 main/binary-amd64/Release
