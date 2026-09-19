@@ -94,19 +94,19 @@ Description: compatibility package for dash
 
 Package: audio-recorder
 Architecture: amd64
-Version: 3.3.4-1~mx23+2
+Version: 3.3.4-1~mx25+3
 Priority: optional
 Section: utils
 Maintainer: Steven Pusser <stevep@mxlinux.org>
 Original-Maintainer: Osmo Antero <osmoma@gmail.com>
-Installed-Size: 714
-Depends: gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, pulseaudio | pipewire-pulse, libappindicator3-1
-Filename: pool/main/audio-recorder_3.3.4-1~mx23+2_amd64.deb
-Size: 201912
-MD5sum: 8a981f8b1f8ce017a7fa6f333c8cb435
-SHA1: fae0f3d2341370a1b4a914f0618227e9f34e5c74
-SHA256: 2ed8f00e313ce3a539718b8f488b0e7395272319f2b9f391454a51d675e9867e
-SHA512: 79a5e3bc1483304e6fd282129d2345d30a7b2d11c50b4127947948f053733b7aebd67053d32531a35d2a988bd81dd661f4d568b2551f4e5add88247f5f648695
+Installed-Size: 726
+Depends: gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, libappindicator3-1, pulseaudio | pipewire-pulse
+Filename: pool/main/audio-recorder_3.3.4-1~mx25+3_amd64.deb
+Size: 204844
+MD5sum: dd45beaae4e230382ca9df3e23759756
+SHA1: 5f495a4f599d320262240cbf6b6783eaad73f8dc
+SHA256: 5bfe62afe8d840bb547f36ae2b3c16b2f6197c9b08541b3d1672faaebbd35580
+SHA512: 45ad106151424dc6318e54f538981496ad6376c3de75a65f3cabaa6f12e81ae275df247a066af9cc7ab47de9ef2f28f660aa0c1d1da12046f0d3cc6d915ec06f
 Homepage: https://launchpad.net/audio-recorder
 Description: Audio recorder for GNOME and Unity Desktops.
  This program allows you to record your favourite music or audio to a file.
@@ -435,6 +435,28 @@ Homepage: https://crunchbangplusplus.org
 Description: default theme for CrunchBangPlusPlus
  Default GTK+ and Openbox themes for CBPP.
 
+Package: celluloid
+Architecture: amd64
+Version: 0.28-3+really21
+Priority: optional
+Section: video
+Maintainer: Xu Zhen <xuzhen@fastmail.com>
+Installed-Size: 1017
+Depends: libc6 (>= 2.34), libcairo2 (>= 1.2.4), libepoxy0 (>= 1.0), libglib2.0-0t64 (>= 2.44), libgtk-3-0t64 (>= 3.22.23), libmpv2 (>= 0.29.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), dconf-gsettings-backend | gsettings-backend, ffmpegthumbnailer
+Recommends: youtube-dl
+Breaks: gnome-mpv (<= 0.16)
+Replaces: gnome-mpv (<= 0.16)
+Filename: pool/main/celluloid_0.28-3+really21_amd64.deb
+Size: 264354
+MD5sum: 31f81a979b4281be5db5bdf6385e09d6
+SHA1: a99012f298e5daa56c5eea909394cdb7f08fd8fa
+SHA256: da86812dd4eb12eb339022af74825d880df2415ea9e937e2ce92fca3a81c71f5
+SHA512: 846c039ca78126a4394ed80350a974b85a60a2f0cf9fa6ea1788014fdec2c70724ef7b9be9d7d5d420532eeed5d1393fc3de3305755da9cde49544f312692294
+Homepage: https://github.com/gnome-mpv/gnome-mpv
+Description: simple GTK+ frontend for mpv
+ Celluloid (formerly GNOME MPV) interacts with mpv via the client API exported
+ by libmpv, allowing access to mpv's powerful playback capabilities.
+
 Package: circle-flags-svg
 Architecture: all
 Version: 2.7.0+mint1
@@ -556,6 +578,27 @@ MD5sum: f08f5bb92e258be84151def4b321e595
 SHA1: 9d70bb67f3b17f3e0505332115ee63593a60f863
 SHA256: edb841263a9761ff78c329dbafd7684deb6dade5b0fbcb5f27bdc13184f55f41
 SHA512: 5fb9945a42c3f4d56dc1a1fd2967a815c1e0f085ec810a18948de8679ffb7f236da87edc46112539dddc68858da0c278afe204da531da02a48f5fc4f7a5af210
+Description: Graphical utility for writing, formatting, and wiping storage devices
+ A simple and convenient tool to write disk images,
+ format, and securely wipe storage devices.
+
+Package: driveutility
+Architecture: all
+Version: 1.8.9
+Priority: optional
+Section: misc
+Maintainer: crims0n <crims0n@minios.dev>
+Installed-Size: 373
+Depends: coreutils (>= 8.28), dosfstools, e2fsprogs, genisoimage, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-polkit-1.0, python3-minios-gui (>= 1.4.0), ntfs-3g, parted, polkitd | policykit-1, pkexec | policykit-1, procps, python3 (>= 3.6), python3-gi, python3-parted, python3-gnupg, python3-unidecode, python3-lz4, gir1.2-udisks-2.0, gir1.2-xapp-1.0, util-linux (>= 2.31), exfatprogs | exfat-utils
+Recommends: nvme-cli, python3-zstandard
+Conflicts: mintstick, usb-imagewriter
+Replaces: mintstick, usb-imagewriter
+Filename: pool/main/driveutility_1.8.9_all.deb
+Size: 62952
+MD5sum: 241ad936185007f77e27b24925b47260
+SHA1: d88c683b262d7fb4f5c8dce2d27aab0876b83c1a
+SHA256: ebde93100f595ed47bd5c5bd3ea0597592ec7d0291cb5232efc17fbdc8cc4fce
+SHA512: d0010c2a524dd06d5409fcdf520caedd51f11fa80e2baa0208aa4a644fbddffa0da52caa8e0fef3e0c12ba784ce09eb7fc8f932a5878c9c5231c5d81c24ae0dd
 Description: Graphical utility for writing, formatting, and wiping storage devices
  A simple and convenient tool to write disk images,
  format, and securely wipe storage devices.
@@ -1159,7 +1202,7 @@ Description: LightPad is a lightweight, simple and powerful application launcher
 
 Package: localsend
 Architecture: amd64
-Version: 1.17.0+58
+Version: 1.18.2+64
 Priority: optional
 Essential: no
 Section: x11
@@ -1167,12 +1210,12 @@ Maintainer: Tienisto <dev.tien.donam@gmail.com>
 Installed-Size: 30600
 Pre-Depends: libc6 (>= 2.31)
 Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Filename: pool/main/localsend_1.17.0+58_amd64.deb
-Size: 11709940
-MD5sum: 59e559f84fe892f067c232c5c2b9b075
-SHA1: eba64eb18930d0a832bea05b33f5263762e5647a
-SHA256: b0244b2c3eacb2a81d61b2662534d6036ab37ace10d6782da36b630c222fa04c
-SHA512: 564a194f9f347431140028fc1c9fdd3cdfcefbc9d083542896502230bfa68afd123b599d450b2b5b2ba62262ffb53b9d9e62be0fdb72889f60c4d2f2e2d03a44
+Filename: pool/main/localsend_1.18.2+64_amd64.deb
+Size: 24665458
+MD5sum: a410fa2d461a583b07dc7994e4207db5
+SHA1: a22fbc5c01e4f10215e0e15253e91c3769f888ba
+SHA256: cc42a4f3eacdcb25ec31f0016b1272acb003145ab30484db8965450e20c72cd2
+SHA512: 2b4443eef800eb5aba2cf3e20ee3612696f285f680c93073c5ae9fad15c92508edc98a96b4b256c008c498923475ea19f2afaad464f2ecd03990f0868830500f
 Homepage: https://localsend.org/
 Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
@@ -1241,6 +1284,36 @@ Homepage: https://github.com/Junker/mictray
 Description: Lightweight application which lets you control the microphone state and volume from system tray
  MicTray is a Lightweight application which lets you control the microphone state and volume from system tray
 
+Package: minios-gui
+Architecture: all
+Version: 1.4.0
+Priority: optional
+Section: x11
+Maintainer: crims0n <crims0n@minios.dev>
+Installed-Size: 35
+Recommends: elementary-minios-icon-theme
+Filename: pool/main/minios-gui_1.4.0_all.deb
+Size: 13212
+MD5sum: 53402cffeb95b07f10ac8426ee9153f9
+SHA1: 3f2420d31b9fa31d6481ea12c0dd19a15142f606
+SHA256: 1ddbcadf8c5ee946f405e9b5a0e273f7140eae498cdc729671a42d54043b6f4e
+SHA512: f33aaeb1652c1deefdd6289f6942720ca077872fed68fb3aadccbddea0671debeaeaadb47fc859133ecebad9f6fb532b20eebf759eaba4c7cdb638dfd14f4995
+Homepage: https://minios.dev
+Description: MiniOS shared GUI styling (canonical stylesheet)
+ Common look-and-feel resources shared by MiniOS graphical applications,
+ including minios-installer, minios-configurator, Drive Utility, and the other
+ minios-* GTK tools.
+ .
+ It installs /usr/share/minios/minios.css, the canonical MiniOS application
+ stylesheet. Applications load this file on top of the active GTK theme to get
+ consistent header bar, sidebar, content card, button, banner, badge, list and
+ progress styling across the whole product. Surfaces derive from the running
+ theme, so both light and dark desktops are supported; only the primary action
+ and brand accents use the fixed MiniOS blue.
+ .
+ This package provides styling resources only. It does not modify the
+ applications, which adopt the stylesheet by loading it explicitly.
+
 Package: minitube
 Architecture: amd64
 Version: 3.9.3-2
@@ -1264,6 +1337,25 @@ Description: Native YouTube client
  .
  Minitube is not about cloning the original YouTube web interface, it aims to
  create a new TV-like experience.
+
+Package: mintstick
+Architecture: all
+Version: 1.6.7
+Priority: optional
+Section: misc
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Installed-Size: 293
+Depends: coreutils, genisoimage, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-polkit-1.0, ntfs-3g, parted, pkexec, procps, python3, python3-gi, python3-parted, python3-gnupg, python3-unidecode, gir1.2-udisks-2.0, gir1.2-xapp-1.0, util-linux, exfatprogs | exfat-utils
+Conflicts: usb-imagewriter
+Replaces: usb-imagewriter
+Filename: pool/main/mintstick_1.6.7_all.deb
+Size: 50324
+MD5sum: b17ff51ef498dfafcaa83cc8a1f6bc32
+SHA1: 076717755f931d42c3c07c6124fbbdbcbb2a12c6
+SHA256: 3e178f6cdf6f2c39a97e318a68703de2fbb4941687d83718b28bb0f86788c1ad
+SHA512: 2df2307d664ad6342a7bb102c7e2857402396467ab85ddc260c69e8a1f1bff40872b6cb7c055444ef875bee06410457307b48b2a6776bf257d55d98a73663f12
+Description: write .img and .iso files to USB sticks
+ A GUI to write .img or .iso files to a USB Key. It can also format them.
 
 Package: multiload-ng-common
 Architecture: all
@@ -1612,6 +1704,27 @@ Description: An AUR-inspired package manager for Ubuntu
 Build-Depends: gettext, gzip
 Uploaders: Pacstall Team <pacstall@pm.me>, Elsie19 <hwengerstickel@pm.me>
 
+Package: partclone-nbd
+Architecture: amd64
+Version: 0.0.4-1
+Priority: optional
+Section: utils
+Maintainer: crims0n <crims0n@minios.dev>
+Installed-Size: 80
+Depends: libc6 (>= 2.34)
+Recommends: bash-completion, nbd-client
+Filename: pool/main/partclone-nbd_0.0.4-1_amd64.deb
+Size: 38544
+MD5sum: 5d32e64e3735dbe13e0341b8eda7469f
+SHA1: 6a51a1c15743b289da3b4c8f75d500d164766b19
+SHA256: 6fd55fdcce5de1c9f4201bc778bf10f2144833e22471a7bdd567cf258035e2ac
+SHA512: 483805f86e0d6a3dd7ace70d5a9c1b1209bf16fae44e84860c4a8eee4a6a35d35f714274f4c776cbaac74265b42dc0067bf65ef543cbdd2963f18c55c640ac3f
+Homepage: https://github.com/allvpv/partclone-nbd
+Description: expose partclone images as Network Block Devices
+ partclone-nbd serves a partclone or Clonezilla partition image through the
+ Network Block Device protocol. The image can then be accessed as a block
+ device locally or by an NBD client.
+
 Package: perl-linux-desktopfiles
 Architecture: all
 Version: 0.25+git20201209-1~mx21+1
@@ -1708,6 +1821,33 @@ Description: Small framework for asynchronous programming (Python 3)
  At first defer was part of aptdaemon, but moved to a separate project in
  August of 2010.
 
+Package: python3-minios-gui
+Architecture: all
+Version: 1.4.0
+Priority: optional
+Section: python
+Source: minios-gui
+Maintainer: crims0n <crims0n@minios.dev>
+Installed-Size: 121
+Depends: python3 (>= 3.6), python3-gi, gir1.2-gtk-3.0, minios-gui (= 1.4.0)
+Filename: pool/main/python3-minios-gui_1.4.0_all.deb
+Size: 25700
+MD5sum: 128d0d33073f77cc469c9ac8a26b1a12
+SHA1: 9015e4ef6b6b00f40ba1302452fd18af0bf41085
+SHA256: 00f8cdfc3a37eefd45179a372049761a6a7a9095630bffbfb75512ddf4022b76
+SHA512: 5d0cc30d097f61d2325b1042a8065a7bedbbd009fda214e744bb47a18f60c23419ebb18648978d5e18ab75528131d22f177271817deac98c001e7256f8df91f6
+Homepage: https://minios.dev
+Description: Python 3 helpers for MiniOS GTK applications
+ Shared Python 3.6-compatible GTK 3 helpers for MiniOS graphical applications.
+ The module provides canonical stylesheet loading, icon-theme resolution,
+ standard dialogs, HeaderBar actions, status banners, password and operation
+ widgets, file choosers, compact module presentation, parser-free compiled
+ document rendering, streamed logs, background tasks, and cancellable command
+ execution.
+ .
+ This binary package is built from the minios-gui source repository together
+ with the canonical MiniOS application stylesheet.
+
 Package: qphotorec
 Architecture: amd64
 Version: 7.2-1+mos1
@@ -1730,19 +1870,19 @@ Description: GUI version of PhotoRec recovery tool
 
 Package: rescuezilla
 Architecture: all
-Version: 2.6.1-1minios4
+Version: 2.6.2-1minios2
 Priority: optional
 Section: admin
-Maintainer: Shasheen Ediriweera <rescuezilla@gmail.com>
-Installed-Size: 3600
-Depends: smbclient, fsarchiver, partclone, pv, pigz, nmap, os-prober, gvfs, cifs-utils, sshfs, sshpass, nfs-common, file, xdg-utils, libnotify-bin, lshw, pciutils, yad, hdparm, pbzip2, lzop, pixz, plzip, lrzip, zstd, fatresize, archivemount, nbd-server, nbd-client, python3-babel, clonezilla, lvm2, binutils, smartmontools, qemu-utils, efibootmgr, bsdmainutils
-Recommends: partimage, ecryptfs-utils, nbdkit, python3-whichcraft
-Filename: pool/main/rescuezilla_2.6.1-1minios4_all.deb
-Size: 523472
-MD5sum: 15a0cc43868d9168c87a92bfc729f54f
-SHA1: 8506cd84f3d07e34171abecaa3b82076ff2b58cb
-SHA256: 6823519b882b7fa856cbe89b63290d155c144158b235b2cc9ff3f17acf268b07
-SHA512: 813416eaa33145d0d7436113837e931b71101a09ec6a0639bc4e556c447eeeadb44c5616b6090ce0c33258429e968b53042346f34c731ebf8a4db6cfe26f2049
+Maintainer: crims0n <crims0n@minios.dev>
+Installed-Size: 3978
+Depends: python3, python3-gi, gir1.2-gtk-3.0, smbclient, fsarchiver, partclone, pv, pigz, nmap, os-prober, gvfs, cifs-utils, sshfs, sshpass, nfs-common, file, xdg-utils, libnotify-bin, lshw, pciutils, yad, hdparm, pbzip2, lzop, pixz, plzip, lrzip, zstd, fatresize, archivemount, nbd-client, nbdkit, python3-babel, clonezilla, lvm2, binutils, smartmontools, qemu-utils, efibootmgr, bsdextrautils | bsdmainutils, polkitd | policykit-1, pkexec | policykit-1
+Recommends: partimage, ecryptfs-utils, python3-whichcraft
+Filename: pool/main/rescuezilla_2.6.2-1minios2_all.deb
+Size: 653760
+MD5sum: 2b7af0ee358e79225e959a576c6eca59
+SHA1: 3b37e08b492f6fe5221a57906b27c11917e43080
+SHA256: 053e97720a770c47b6fdb9c879d684bb7113f28af0aea55e279e56d5d18a5138
+SHA512: 51a9ec5c12acc52d1d7b30348fa7015a27155c1365401b30621798501843237f2018d8bd03a87fc8125a09bdd0e6bb0e5514dfacdf4029feac1923368164ecd8
 Homepage: https://rescuezilla.com
 Description: Graphical hard drive backup and restore
  Rescuezilla is an easy-to-use disk cloning and imaging application that's
@@ -1754,28 +1894,47 @@ Description: Graphical hard drive backup and restore
 
 Package: scrcpy
 Architecture: amd64
-Version: 3.3.3-2~mx25+1
+Version: 3.3.4-1~bpo13+1
 Priority: optional
-Section: net
-Maintainer: TheBSODFan <bsodandwsodalt@outlook.com>
-Installed-Size: 464
-Provides: scrcpy-server
-Depends: libavcodec61 (>= 7:7.1), libavdevice61 (>= 7:7.1), libavformat61 (>= 7:7.1), libavutil59 (>= 7:7.1), libc6 (>= 2.41), libsdl2-2.0-0 (>= 2.32.4), libusb-1.0-0 (>= 2:1.0.28)
-Recommends: adb
-Breaks: scrcpy-server
-Replaces: scrcpy-server
-Filename: pool/main/scrcpy_3.3.3-2~mx25+1_amd64.deb
-Size: 190192
-MD5sum: 84022777f97c8062449143ed16da18e1
-SHA1: 63412a3e3f30545415c607020daa52aa8ff1f358
-SHA256: 52189ce0509c0838cbe8b8d3fd5e319366f1c3f3e9e43885e76e1faa72311f83
-SHA512: 21679e8eea9dc65180f32e59843548dd83671916f6484865dd8ed5ecb4245271ba6764e61795d3faafdabf12e10b2f4aeb9d459e66b3c5c528231a006ccbf9d6
+Section: contrib/net
+Maintainer: Yangfl <mmyangfl@gmail.com>
+Installed-Size: 286
+Depends: debconf (>= 0.5) | debconf-2.0, libavcodec61 (>= 7:7.0), libavdevice61 (>= 7:7.0), libavformat61 (>= 7:7.0), libavutil59 (>= 7:7.0), libc6 (>= 2.38), libsdl2-2.0-0 (>= 2.0.12), libswresample5 (>= 7:7.0), libusb-1.0-0 (>= 2:1.0.16)
+Recommends: adb, wget | curl, ca-certificates
+Breaks: scrcpy-server (<< 3.3.2)
+Replaces: scrcpy-server (<< 3.3.2)
+Filename: pool/main/scrcpy_3.3.4-1~bpo13+1_amd64.deb
+Size: 102952
+MD5sum: 2a97a480dddfed8858c7a0f576c8036a
+SHA1: c08ab165804c0eb70e7a13dc6975d5ea772b43b9
+SHA256: 6b0df622fc5301bc9ca80f402762548387e1a95ee9ffe22b72e85e6809194633
+SHA512: e83e11859d0b5dccb7d187c1b8b40ac4eb3f1c1634e9b3e1d6cd1ec70aea148ee19a9f75bd24e2fe4e9b2774365d783d1f02382c5351bcc40efd04876062d974
 Homepage: https://github.com/Genymobile/scrcpy
-Description: Display and control your Android device
- This application provides display and control of Android devices connected on
- USB (or over TCP/IP). It does not require any root access.
+Description: Display and control your Android devices
+ scrcpy mirrors Android devices (video and audio) connected via USB or TCP/IP,
+ and allows one to control them using the computer's keyboard and mouse. It does
+ not require root access or an app installed on the device.
  .
- This package contains the client (desktop) binary, and server (mobile) binary which will be pushed to the Android device.
+ Its features include:
+   * audio forwarding (Android 11+)
+   * recording
+   * virtual display
+   * mirroring with Android device screen off
+   * copy-paste in both directions
+   * configurable quality
+   * camera mirroring (Android 12+)
+   * mirroring as a webcam (V4L2) (Linux-only)
+   * physical keyboard and mouse simulation (HID)
+   * gamepad support
+   * OTG mode
+   * and more...
+ .
+ The Android device requires at least API 21 (Android 5.0). Audio forwarding is
+ supported for API >= 30 (Android 11+). Make sure you enabled USB debugging on
+ your device(s).
+ .
+ This package contains the client (desktop) binary. Server (mobile) binary will
+ be downloaded directly from upstream.
 
 Package: simplescreenrecorder-lib
 Architecture: amd64
@@ -1865,19 +2024,18 @@ Description: Linux system optimizer and monitoring
 
 Package: system-monitoring-center
 Architecture: all
-Version: 2.26.0-1~mx23+1
+Version: 3.4.1
 Priority: optional
 Section: utils
-Maintainer: Steven Pusser <stevep@mxlinux.org>
-Original-Maintainer: Hakan Dündar <hakandundar34coding@gmail.com>
-Installed-Size: 1342
-Depends: dmidecode, gir1.2-adw-1, gir1.2-glib-2.0, gir1.2-gtk-4.0, gir1.2-pango-1.0, hwdata, iproute2, python3 (>= 3.6), python3-cairo, python3-gi, python3-gi-cairo, util-linux (>= 2.31)
-Filename: pool/main/system-monitoring-center_2.26.0-1~mx23+1_all.deb
-Size: 188400
-MD5sum: 2cf2ca47748cc829f01df86c254967e3
-SHA1: 2f9465fad9579c17a99a07044a6614cad1f18d5d
-SHA256: a46484317237fd886f1833f983f78cb70cb6e8446abdaae83229f36aa3543ce4
-SHA512: e7089abd89683d4406e00411e80592144ff92629fbc0e5bfe01c094461408c135594b2d78f18bd24e9e67e82fbf75a4f49324c6393cf6a53f377f7fa57c0a986
+Maintainer: Hakan Dündar <hakandundar34@gmail.com>
+Installed-Size: 1354
+Depends: dmidecode, hwdata, iproute2, python3 (>= 3.6), python3-tk, python3-pil, python3-pil.imagetk, python3-cairo, util-linux (>= 2.31)
+Filename: pool/main/system-monitoring-center_3.4.1_all.deb
+Size: 274456
+MD5sum: b31e55392645775245f45ed588863fb7
+SHA1: ada3af07e271a8d82d7d79930d7a82f67360577f
+SHA256: deb5db9f74db3753167bc1fb390ed16d4adc28216dcdb694fdeed6126f5945cb
+SHA512: 939a2458c1632aebe64ff79b18c400699c8163d029bca2b39cc24b33af60dee52b919cd4bc3ad5833ebb256d8cda09a4d6cfb75a0b511300e61bb6d20696431e
 Homepage: https://github.com/hakandundar34coding/system-monitoring-center
 Description: Multi-featured system monitor
  Provides information about CPU/RAM/Disk/Network/GPU performance, sensors,
@@ -1963,6 +2121,25 @@ Description: indicator for the touchpad
  or by clicking on menu. It also disables and then re-enables the touchpad when
  suspending and then resuming the computer.
 
+Package: transume
+Architecture: all
+Version: 1.0.2
+Priority: optional
+Section: utils
+Maintainer: crims0n <crims0n@minios.dev>
+Installed-Size: 889
+Depends: python3:any, clonezilla (>= 5.9.9-1), acl, ecryptfs-utils, gir1.2-gtk-4.0 (>= 4.18), libgtk-4-1 (>= 4.18), lvm2, pkexec, polkitd, cifs-utils, nfs-common, partclone (>= 0.3.36+repack-1), partclone-nbd (>= 0.0.4-1), nbdkit (>= 1.42.3-1), nbd-client, sshfs, python3 (>= 3.13), python3-gi
+Filename: pool/main/transume_1.0.2_all.deb
+Size: 140788
+MD5sum: 9742b2afd3cde6a7a65986cb25810b3e
+SHA1: 56e6bdfc77a2b1c454356011f3c74b51d250ea38
+SHA256: 23c72d3217a7cd86e88a4e311fe78c9b5d6a524854a3079b9adb3ce77c3aff57
+SHA512: fdc9d7a313184348d3e50a56e74b82fe9fcfe33006883eaef3982736be28ca22313043af166c72442b843dc26313413b53e409c5d4e3371ba360c786f5683902
+Homepage: https://minios.dev/
+Description: GTK4 frontend for Clonezilla
+ Transume provides a graphical interface for Clonezilla backup, restore,
+ cloning, image management, verification, network storage, and LVM2 workflows.
+
 Package: ttf-devubox-font-collections
 Architecture: all
 Version: 25.11.03-1~devubox+1
@@ -2004,18 +2181,18 @@ Description: installer of Linux/BSD distributions to a partition or USB drive
 
 Package: ventoy
 Architecture: all
-Version: 1.1.07
+Version: 1.1.17
 Priority: optional
 Section: System
 Maintainer: pavroo <pavroo@onet.eu>
-Installed-Size: 23760
+Installed-Size: 24040
 Depends: ash, bash, coreutils, dosfstools, e2fsprogs, exfatprogs | exfat-utils, grep, mount, procps, sudo, util-linux, xz-utils
-Filename: pool/main/ventoy_1.1.07_all.deb
-Size: 18763312
-MD5sum: e48ee77a2e1c49b299a651f8330ed275
-SHA1: 626d8b4e6f2d3cd2fb9aa5c58a0af8cada6d516e
-SHA256: 6a8da5faebe5960afeb447bd29798574e8214932644af6fedaa08017df111e88
-SHA512: 1489a1f43502d09d2c2aae69471a78ac4ebf044f21766cc3d21ea6b7fb8f18374d304dd45c5b04df0ed8a88427ce73c430791afc6affdead6346ad81f2a817bf
+Filename: pool/main/ventoy_1.1.17_all.deb
+Size: 19013712
+MD5sum: 0b52756cf3fd3e91a407a62c30559f47
+SHA1: f5fd73d808aa080df1aefcf0c9de2af81e8f554f
+SHA256: 5adfce0959fbb3f1de896ab90c6717c6108585d76cf253f403578bff7da0e1fe
+SHA512: 9341e7fa932c6c53b463c1f9440c31074deb33ec2534e7bc15845b2501dba7987c7ebc6e9261a761a64a63102e33f121ef173fdc7a0c5d3251b9acb26b820c8e
 Homepage: https://github.com/ventoy/Ventoy
 Description: Ventoy
  Ventoy is an open source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files. With ventoy, you don't need to format the disk over and over, you just need to copy the image files to the USB drive and boot it.
@@ -2044,18 +2221,18 @@ Description: Disk encryption with strong security based on TrueCrypt.
 
 Package: warpinator
 Architecture: amd64
-Version: 1.8.10+gigi
+Version: 2.0.4+gigi
 Priority: optional
 Section: x11
 Maintainer: Linux Mint <root@linuxmint.com>
-Installed-Size: 19686
+Installed-Size: 19872
 Depends: gir1.2-glib-2.0, gir1.2-gtk-3.0 (>= 3.20.0), gir1.2-xapp-1.0 (>= 1.6.0), python3 (<< 3.14), python3 (>= 3.13~), python3-gi, python3-setproctitle, python3-xapp (>= 1.6.0), python3-cryptography, python3-nacl, python3-netaddr, python3-netifaces, python3-ifaddr, python3-qrcode, dconf-gsettings-backend | gsettings-backend, python3:any, libc6 (>= 2.38), libstdc++6 (>= 13.1)
-Filename: pool/main/warpinator_1.8.10+gigi_amd64.deb
-Size: 5489460
-MD5sum: 449bec6fdcc5ccdd1f79f48bedf21e74
-SHA1: 1b51fc51baa17301694cd4d3d551e5d3642ca0c8
-SHA256: e54d87dc1f5ca580fbc07e5d9970a44dc200c1088c1b20744c2ce6cd09c08973
-SHA512: cfafb0953c93ee9d461765ec69428fb81788075ad4f540c3f087aeb92b55a67cecdd07f24aac19a7b190997312e3cdba9da5a750dc49cea1e4f79c0c64f1e437
+Filename: pool/main/warpinator_2.0.4+gigi_amd64.deb
+Size: 5511804
+MD5sum: e4528636235259e65923db094061f73c
+SHA1: dd8ea33c0216b88e973ae9d8136d43d33ffc2e45
+SHA256: 107ad3deed7879800ccdb19a262f3887c141bf8b4dcb74f62f4617817efbf888
+SHA512: f09ae8bc7f2c4d622da3e3d45b772b2cf05992c13b197782e0ae0d193bd2671cf7c410938b10c19efd382e93f4d4454b52ea65b8d2a61efc6ae19aa241e046b0
 Description: Allows simple local network file sharing.
 
 Package: webapp-manager
@@ -2182,4 +2359,261 @@ Description: graphical application for managing Xfce settings (only mime-setting
   - xfsettingsd, a daemon for exporting XSettings to applications, and
     providing special features like keyboard shortcuts, AccessX notification
     and update of keyboard and mouse-pointer data.
+
+Package: yt-dlp
+Architecture: all
+Version: 2026.08.19-1~mx25+1
+Priority: optional
+Section: web
+Maintainer: Steven Pusser <stevep@mxlinux.org>
+Original-Maintainer: Unit 193 <unit193@debian.org>
+Installed-Size: 10881
+Depends: python3-certifi, python3-mutagen, python3-pycryptodome, python3-requests, python3-urllib3, python3-websockets, python3:any
+Recommends: aria2 | wget | curl, ca-certificates, ffmpeg
+Suggests: libfribidi-bin | bidiv, deno | nodejs | quickjs
+Filename: pool/main/yt-dlp_2026.08.19-1~mx25+1_all.deb
+Size: 2093212
+MD5sum: c8bb19f57585b50fcef23a4b4643d422
+SHA1: 25b06df08bb31bf98a760d46f59adba66f1fdc0f
+SHA256: c810e18cdcd6421ebbe1d62ddd38f08e96ff583e9a653c6695d960858e06b616
+SHA512: e4c7fd2595a43088b280684dfc2d2fe9f684321b8f4b56f92159dec3ffc2b4d782a5e945ae924270b7a951cc85704f942d1653cceb48cdc2bdb525538a10ccd4
+Homepage: https://github.com/yt-dlp/yt-dlp
+Description: downloader of videos from YouTube and other sites
+ yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc.
+ The main focus of this project is adding new features and patches
+ while also keeping up to date with the original project.
+ .
+ yt-dlp is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+ .
+ yt-dlp allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab. It supports
+ downloading entire playlists and all videos from a given user.
+ .
+ Please note, you'll need an external JS engine such as NodeJS for YouTube.
+ .
+ Currently supported sites (or features of sites) are:
+ .
+ 10play, 17live, 1News, 1tv, 20min, 23video, 247sports, 24tv.ua,
+ 3qsdn, 3sat, 4tube, 56.com, 7plus, 9c9media, 9gag, 9News, 9now.com.au,
+ abc.net.au, abcnews, abcotvs, AbemaTV, AbemaTVTitle, acast, AcFunBangumi,
+ AcFunVideo, ADN, ADNSeason, AdobeConnect, adobetv, AdultSwim, aenetworks,
+ AeonCo, AitubeKZVideo, Alibaba, AliExpressLive, AlJazeera, Allocine,
+ Allstar, AllstarProfile, AlphaPorno, altcensored, Alura, AluraCourse,
+ AmadeusTV, Amara, AmazonMiniTV, AmazonReviews, AmazonStore, AMCNetworks,
+ AmericasTestKitchen, AmericasTestKitchenSeason, AmHistoryChannel,
+ anderetijden, Angel, AnimalPlanet, Anvato, aol.com, APA, Aparat,
+ archive.org, ArcPublishing, ARDAudiothek, ARDAudiothekPlaylist,
+ ARDMediathek, ARDMediathekCollection, Art19, Art19Show, arte.sky.it,
+ ArteTV, ArteTVCategory, ArteTVEmbed, ArteTVPlaylist, asobichannel,
+ AsobiStage, AtresPlayer, AtScaleConfEvent, AudiMedia, AudioBoom,
+ audiomack, Audius, AZMedien, BaiduVideo, BanBye, BanByeChannel,
+ Bandcamp, Bandlab, BandlabPlaylist, BannedVideo, bbc, bbc.co.uk, BBVTV,
+ BBVTVLive, BBVTVRecordings, BeaconTv, Beatport, Beeg, BehindKink,
+ BerufeTV, Bet, bfmtv, Bigo, Bild, BiliBili, Bilibili category extractor,
+ BilibiliAudio, BilibiliAudioAlbum, BiliBiliBangumi, BiliBiliBangumiMedia,
+ BiliBiliBangumiSeason, BilibiliCheese, BilibiliCheeseSeason,
+ BilibiliCollectionList, BiliBiliDynamic, BilibiliFavoritesList,
+ BiliBiliPlayer, BilibiliPlaylist, BiliBiliSearch, BilibiliSeriesList,
+ BilibiliSpaceAudio, BilibiliSpaceVideo, BilibiliWatchlater, BiliIntl,
+ BiliLive, BioBioChileTV, Biography, BitChute, BitChuteChannel,
+ Bitmovin, BlackboardCollaborate, BlackboardCollaborateLaunch,
+ BleacherReport, BleacherReportCMS, blerp, blogger.com, Bloomberg, Bluesky,
+ BongaCams, Boosty, BostonGlobe, Box, BoxCastVideo, Bpb, BR, BrainPOP,
+ BrainPOPELL, BrainPOPEsp, BrainPOPFr, BrainPOPIl, BrainPOPJr, BravoTV,
+ BreitBart, BTVPlus, Bundesliga, Bundestag, BunnyCdn, BusinessInsider,
+ BuzzFeed, BYUtv, Caltrans, CAM4, CamFMEpisode, CamFMShow, CamModels,
+ Camsoda, CamtasiaEmbed, Canal1, CanalAlpha, canalc2.tv, Canalplus,
+ Canalsurmas, CaracolTvPlay, cbc.ca, CBS, CBSLocal, CBSLocalArticle,
+ CBSLocalLive, cbsnews, cbssports, CCMA, CCTV, CDA, CDAFolder, Cellebrite,
+ CeskaTelevize, CGTN, CharlieRose, Chaturbate, Chilloutzone, cielotv.it,
+ Cinemax, CinetecaMilano, Cineverse, CineverseDetails, CiscoLiveSearch,
+ CiscoLiveSession, ciscowebex, CJSW, Clipchamp, ClipRs, CloserToTruth,
+ CloudflareStream, CloudyCDN, Clubic, Clyp, CNBCVideo, CNN, CNNIndonesia,
+ ComedyCentral, ConanClassic, CondeNast, CookingChannel, Corus, Coub,
+ CozyTV, cp24, cpac, Cracked, Craftsy, croatian.film, CrooksAndLiars,
+ CrowdBunker, CrowdBunkerChannel, Crtvg, CSpan, CSpanCongress, CtsNews,
+ CTVNews, cu.ntv.co.jp, CultureUnplugged, curiositystream, Cybrary,
+ CybraryCourse, DacastPlaylist, DacastVOD, DagelijkseKost, DailyMail,
+ dailymotion, DailyWire, DailyWirePodcast, dangalplay, daum.net,
+ DBTV, DctpTv, democracynow, DestinationAmerica, DetikEmbed, DeuxM,
+ DeuxMNews, DHM, DigitalConcertHall, DigitallySpeaking, Digiteka, Digiview,
+ DiscogsReleasePlaylist, DiscoveryLife, DiscoveryNetworksDe, DiscoveryPlus,
+ DiscoveryPlusIndia, DiscoveryPlusIndiaShow, DiscoveryPlusItaly,
+ DiscoveryPlusItalyShow, Disney, dlf, Douyin, DouyuShow, DouyuTV,
+ DPlay, DRBonanza, Dropbox, Dropout, DropoutSeason, DrTalks, DrTuber,
+ drtv, DTube, Dumpert, Duoplay, dvtv, dw, dzen.ru, EbaumsWorld,
+ Ebay, EinsUndEinsTV, EinsUndEinsTVLive, EinsUndEinsTVRecordings,
+ ElementorEmbed, Elonet, ElPais, ElTreceTV, Embedly, EMPFlix, Epicon,
+ EpiconSeries, EpidemicSound, eplus, Epoch, Eporner, Erocast, EroProfile,
+ ERRArhiiv, ERRJupiter, ertflix, ESPN, ESPNArticle, ESPNCricInfo,
+ EttuTv, Europa, EuroParlWebstream, EuropeanTour, Eurosport,
+ EUScreen, EWETV, EWETVLive, EWETVRecordings, Expressen, facebook,
+ FacebookPluginsVideo, Fathom, Faulio, FaulioLive, faz.net, fc2,
+ Fczenit, Fifa, FilmArchiv, filmon, Filmweb, FiveThirtyEight, FiveTV,
+ Flickr, Floatplane, FloatplaneChannel, Folketinget, FoodNetwork,
+ FootyRoom, Formula1, FOX, FOX9, FOX9News, foxnews, FoxNewsVideo,
+ FoxSports, fptplay, FrancaisFacile, FranceCulture, franceinfo,
+ francetv, Freesound, freespeech.org, FreeTvMovies, FrontendMasters,
+ FrontendMastersCourse, FrontendMastersLesson, Funk, Funker530, Fux,
+ FuyinTV, Gab, Gaia, GameDevTVDashboard, GameJolt, GameJoltCommunity,
+ GameJoltGame, GameJoltGameSoundtrack, GameJoltSearch, GameJoltUser,
+ GameSpot, GameStar, Gaskrank, Gazeta, GBNews, GDCVault, GediDigital,
+ gem.cbc.ca, generic, Genius, GeniusLyrics, Germanupa, GetCourseRu,
+ GetCourseRuPlayer, Gettr, GettrStreaming, GiantBomb, GlattvisionTV,
+ GlattvisionTVLive, GlattvisionTVRecordings, Glide, GlobalPlayerAudio,
+ GlobalPlayerAudioEpisode, GlobalPlayerLive, GlobalPlayerLivePlaylist,
+ GlobalPlayerVideo, Globo, GloboArticle, glomex, GMANetworkVideo, Go,
+ GoDiscovery, GodResource, GodTube, Golem, GoogleDrive, GoPro, GoToStage,
+ Graspop, Gronkh, Groupon, Harpodeon, hbo, HearThisAt, Heise, HellPorno,
+ hetklokhuis, HGTVDe, HGTVUsa, HiDive, HistoricFilms, HitRecord,
+ HollywoodReporter, HollywoodReporterPlaylist, Holodex, HotNewHipHop,
+ hotstar, hrfernsehen, HRTi, HRTiPlaylist, HSEProduct, HSEShow, html5,
+ Huajiao, HuffPost, Hungama, HungamaAlbumPlaylist, HungamaSong, Hypem,
+ Hytale, Icareus, IdagioAlbum, IdagioPersonalPlaylist, IdagioPlaylist,
+ IdagioRecording, IdagioTrack, IflixSeries, ign.com, IGNArticle, IGNVideo,
+ iheartradio, IlPost, Iltalehti, imdb, Imgur, Ina, Inc, IndavideoEmbed,
+ InfoQ, Instagram, InstagramIOS, Internazionale, InvestigationDiscovery,
+ IPrima, IPrimaCNN, iq.com, iqiyi, IslamChannel, IslamChannelSeries,
+ IsraelNationalNews, ITProTV, ITProTVCourse, ITV, ITVBTCC, ivi, ivideon,
+ Ivoox, iwara, Ixigua, Jamendo, JamendoAlbum, JeuxVideo, Joj, Jove,
+ JStream, JTBC, JWPlatform, Kakao, Kaltura, KankaNews, Karaoketv, Katsomo,
+ KelbyOne, Kenh14Playlist, Kenh14Video, khanacademy, Kicker, KickStarter,
+ Kika, KikaPlaylist, KinoPoisk, Kommunetv, KompasVideo, KrasView, KTH,
+ Ku6, KukuluLive, la7.it, laracasts, LastFM, LastFMPlaylist, LastFMUser,
+ LaXarxaMes, lbry, LCI, Lcp, LcpPlay, Le, LearningOnScreen, Lecture2Go,
+ Lecturio, LecturioCourse, LecturioDeCourse, LeFigaroVideoEmbed,
+ LeFigaroVideoSection, LEGO, Lemonde, Lenta, LePlaylist, Libsyn,
+ life, likee, LinkedIn, Liputan6, ListenNotes, LiTV, LiveJournal,
+ Livestreamfails, Lnk, loc, Locipo, LocipoPlaylist, Loco, loom,
+ LoveHomePorn, LRTRadio, LRTStream, LRTVOD, LSMLREmbed, LSMLTVEmbed,
+ LSMReplay, Lumni, maariv.co.il, MagellanTV, MagentaMusik, mailru,
+ MainStreaming, MangoTV, ManyVids, MaoriTV, Markiza, MarkizaPage,
+ massengeschmack.tv, Masters, MatchiTV, MatchTV, mave, MBN, MDR,
+ MedalTV, media.ccc.de, Mediaite, MediaKlikk, Medialaan, Mediaset,
+ MediasetShow, Mediasite, MediasiteCatalog, MediasiteNamedCatalog,
+ MediaStream, MediaWorksNZVOD, Medici, megaphone.fm, megatvcom,
+ Meipai, mellowfan, MelonVOD, Metacritic, mewatch, MicrosoftBuild,
+ MicrosoftEmbed, MicrosoftLearnEpisode, MicrosoftLearnPlaylist,
+ MicrosoftLearnSession, MicrosoftMedius, minds, mir24.tv, mirrativ,
+ MirrorCoUK, mixch, mixcloud, Mixlr, MixlrRecoring, MLB, MLBArticle,
+ MLBTV, MLBVideo, MLSSoccer, MNetTV, MNetTVLive, MNetTVRecordings,
+ MochaVideo, Mojevideo, Monstercat, monstersiren, Motorsport, MovieFap,
+ moviepilot, MovingImage, MSN, mtg, mtv, MTVUutisetArticle, MuenchenTV,
+ MujRozhlas, Murrtube, MurrtubeUser, MuseAI, MuseScore, Mux, Mx3, Mx3Neo,
+ Mx3Volksmusik, mxplayer, MySpace, MySpass, MyVideoGe, MyVidster,
+ Mzaalo, n-tv.de, N1InfoAsset, NascarClassics, Nate, NateProgram,
+ NationalGeographicTV, Naver, nba, NBC, NBCNews, nbcolympics,
+ NBCSports, NBCSportsStream, NBCSportsVPlayer, NBCStations, ndr, NDTV,
+ NekoHacker, Nest, NestClip, NetAppCollection, NetAppVideo, NetPlusTV,
+ NetPlusTVLive, NetPlusTVRecordings, Netzkino, Newgrounds, NewsPicks,
+ Newsy, Nexx, NexxEmbed, nfb, NFHSNetwork, nfl.com, NhkForSchoolBangumi,
+ NhkForSchoolProgramList, NhkForSchoolSubject, NhkRadioNewsPage,
+ NhkRadiru, NhkRadiruLive, NhkVod, NhkVodProgram, nhl.com, nick.com,
+ niconico, NiconicoChannelPlus, NiconicoUser, NinaProtocol, Nintendo,
+ Nitter, njoy, NobelPrize, NoicePodcast, NonkTube, NoodleMagazine,
+ NOSNLArticle, Nova, NovaEmbed, NovaPlay, NowCanal, nowness, Noz, npo,
+ Npr, NRK, NRKPlaylist, NRKRadioPodkast, NRKSkole, NRKTV, NRKTVDirekte,
+ NRKTVEpisode, NRKTVEpisodes, NRKTVSeason, NRKTVSeries, NRLTV, nts.live,
+ ntv.ru, NubilesPorn, Nuvid, NYTimes, NYTimesArticle, NYTimesCookingGuide,
+ NYTimesCookingRecipe, nzherald, NZOnScreen, NZZ, ocw.mit.edu,
+ Odnoklassniki, OfTV, OfTVPlaylist, OktoberfestTV, OlympicsReplay, Omnyfm,
+ OmnyfmPlaylist, OmnyfmShow, on24, OnDemandChinaEpisode, OnDemandKorea,
+ OnDemandKoreaProgram, OneFootball, OnePlacePodcast, onet.pl, onet.tv,
+ OnetMVP, onsen, Opencast, OpencastPlaylist, OsnatelTV, OsnatelTVLive,
+ OsnatelTVRecordings, OutsideTV, OwnCloud, PacktPub, PacktPubCourse,
+ PandaTv, Panopto, PanoptoList, PanoptoPlaylist, ParamountPressExpress,
+ Parler, parliamentlive.tv, Parlview, patreon, pbs, PBSKids, PearVideo,
+ PeekVids, peer.tv, PeerTube, peloton, PerformGroup, periscope,
+ PGATour, PhilharmonieDeParis, phoenix.de, Photobucket, PiaLive,
+ Piapro, picarto, Piksel, Pinkbike, Pinterest, PinterestCollection,
+ Platzi, PlatziCourse, play.tv, player.sky.it, PlayerFm, PlaySuisse,
+ Playtvak, PlayVids, pluralsight, PlutoTV, PlyrEmbed, PodbayFM,
+ PodbayFMChannel, Podchaser, podomatic, PokerGo, PokerGoCollection,
+ PolsatGo, PolskieRadio, Popcorntimes, PopcornTV, Pornbox, PornerBros,
+ PornFlip, PornHub, PornHubPagedVideoList, PornHubPlaylist, PornHubUser,
+ PornHubUserVideosUpload, Pornotube, PornoVoisines, PornoXO, PornTop,
+ PornTube, Pr0gramm, PrankCast, PrankCastPost, PremiershipRugby, PressTV,
+ ProjectVeritas, PRXAccount, PRXSeries, PRXStory, puhutv, Pyvideo, QDance,
+ QingTing, qqmusic, QuantumTV, QuantumTVLive, QuantumTVRecordings,
+ R7, R7Article, Radiko, RadikoRadio, radio.de, Radio1Be, radiocanada,
+ radiofrance, RadioFranceLive, RadioFrancePodcast, RadioFranceProfile,
+ RadioFranceProgramSchedule, RadioJavan, radiokapital, RadioRadicale,
+ RadioZetPodcast, radlive, Rai, RaiCultura, RaiNews, RaiPlay, RaiPlayLive,
+ RaiPlayPlaylist, RaiPlaySound, RaiPlaySoundLive, RaiPlaySoundPlaylist,
+ RaiSudtirol, RayWenderlich, RayWenderlichCourse, RbgTum,
+ RbgTumCourse, RbgTumNewCourse, RCS, RCSEmbeds, RCSVarious, RCTIPlus,
+ RCTIPlusSeries, RCTIPlusTV, RDS, RedBull, RedBullEmbed, RedBullTV,
+ RedBullTVRrnContent, Reddit, RedGifs, RedGifsSearch, RedGifsUser,
+ RedTube, RENTV, RENTVArticle, Restudy, Reuters, ReverbNation, RideHome,
+ RinseFM, RinseFMArtistPlaylist, RockstarGames, Rokfin, RoosterTeeth,
+ RoosterTeethSeries, RottenTomatoes, RoyaLive, Rozhlas, RozhlasVltava,
+ RTBF, RTDocumentry, RTDocumentryPlaylist, rte, rtl.nl, rtl2, RTLLuLive,
+ RTLLuRadio, RTNews, RTP, RTRFM, RTS, RTVCKaltura, RTVCPlay, RTVCPlayEmbed,
+ rtvslo.si, RudoVideo, Rule34Video, Rumble, RumbleChannel, RumbleEmbed,
+ Ruptly, rutube, Ruutu, Ruv, S4C, S4CSeries, safari, Saitosan, SAKTV,
+ SAKTVLive, SAKTVRecordings, SaltTV, SaltTVLive, SaltTVRecordings,
+ SampleFocus, Sangiin, Sapo, SaucePlus, SaucePlusChannel, SBS,
+ sbs.co.kr, schooltv, ScienceChannel, Screen9, Screencast,
+ Screencastify, ScreencastOMatic, ScreenRec, ScrippsNetworks,
+ Scrolller, sejm, Sen, SenalColombiaLive, senate.gov, Servus, Sexu,
+ SeznamZpravy, SeznamZpravyArticle, Shahid, ShahidShow, SharePoint,
+ ShemarooMe, Shiey, ShugiinItvLive, ShugiinItvLiveRoom, ShugiinItvVod,
+ SibnetEmbed, simplecast, Sina, Skeb, sky.it, SkylineWebcams, SkyNewsAU,
+ Slideshare, SlidesLive, Slutload, smotrim, SnapchatSpotlight,
+ SoftWhiteUnderbelly, Sohu, SohuV, SonyLIV, SonyLIVSeries, soop,
+ soundcloud, SoundcloudEmbed, soundgasm, southpark.cc.com, southpark.de,
+ southpark.lat, southparkstudios.co.uk, southparkstudios.com.br,
+ southparkstudios.nu, SovietsCloset, SovietsClosetPlaylist, SpankBang,
+ SpankBangPlaylist, Spiegel, Sport5, SportBox, sporteurope, Spreaker,
+ SpreakerShow, SproutVideo, SRGSSR, SRGSSRPlay, StacommuLive,
+ StacommuVOD, StagePlusVODConcert, startrek, startv, Steam,
+ SteamCommunity, SteamCommunityBroadcast, StoryFire, StoryFireSeries,
+ StoryFireUser, Streaks, Streamable, StreamCZ, StreetVoice, Stripchat,
+ stvr, Subsplash, Substack, SunPorno, Syfy, SztvHu, t-online.de,
+ Tagesschau, TapTapApp, TapTapAppIntl, TapTapMoment, TapTapPostIntl,
+ Tass, TBS, TBSJPEpisode, TBSJPPlaylist, TBSJPProgram, Teachable,
+ TeachableCourse, teachertube, TeachingChannel, Teamcoco, TeamTreeHouse,
+ techtv.mit.edu, TedEmbed, TedPlaylist, TedSeries, TedTalk, Tele13, Tele5,
+ TeleBruxelles, TelecaribePlay, Telecinco, Telegraaf, TeleMB, Telemundo,
+ TeleQuebec, TeleQuebecEmission, TeleQuebecLive, TeleQuebecSquat,
+ TeleQuebecVideo, TeleTask, Telewebion, TennisTV, TF1, TFO, TheChosen,
+ TheChosenGroup, TheGuardianPodcast, TheGuardianPodcastPlaylist,
+ TheHighWire, TheIntercept, ThePlatform, ThePlatformFeed, TheStar,
+ TheSun, TheWeatherChannel, ThisAmericanLife, ThisOldHouse, ThisVid,
+ ThisVidMember, ThisVidPlaylist, ThreeSpeak, ThreeSpeakUser, TikTok, TLC,
+ TMZ, TNAFlix, TNAFlixNetworkEmbed, toggle, toggo, ToonGoggles, tou.tv,
+ toutiao, Toypics, ToypicsUser, TravelChannel, TrtCocukVideo, TrtWorld,
+ TrueID, TruNews, Truth, ttinglive, Tube8, TubeTuGraz, TubeTuGrazSeries,
+ tubitv, Tumblr, tv.dfb.de, TV2, TV2Article, TV2DK, TV2DKBornholmPlay,
+ tv2play.hu, tv2playseries.hu, TV4, TV5MONDE, tv5unis, tv8.it,
+ TVANouvelles, TVANouvellesArticle, tvaplus, TVC, TVCArticle, TVer, tvigle,
+ TVIPlayer, TVN24, tvnoe, TVO, tvp, TVPlayHome, tvw, Tweakers, TwitCasting,
+ TwitCastingLive, TwitCastingUser, twitter, Txxx, udemy, UDNEmbed, UFCTV,
+ ukcolumn, UlizaPlayer, UlizaPortal, Unistra, UnitedNationsWebTv, Unity,
+ uol.com.br, uplynk, Urort, URPlay, USANetwork, USAToday, ustream, ustudio,
+ Varzesh3, Vbox7, Veo, Vevo, VevoPlaylist, VGTV, vh1.com, vice, Viddler,
+ Videa, video.arnes.si, video.sky.it, VideoKenPlayer, VideoPress, Vidflex,
+ Vidio, VidioLive, VidioPremier, VidLii, Vidly, vids.io, Vidyard, viewlift,
+ Viidea, vimeo, ViMP, Viously, Viqeo, Visir, Viu, ViuOTTIndonesia, vk,
+ VKPlay, VKPlayLive, vm.tiktok, Vocaroo, VODPlatform, voicy, VoxMedia,
+ VoxMediaVolume, vpro, vrsquare, VRT, vrtmax, VTM, VTV, VTVGo, VTXTV,
+ VTXTVLive, VTXTVRecordings, Walla, WalyTV, WalyTVLive, WalyTVRecordings,
+ washingtonpost, wat.tv, WatchESPN, WDR, WDRElefant, WDRPage, Webcamerapl,
+ Webcaster, WebcasterFeed, WebOfStories, WebOfStoriesPlaylist, Weibo,
+ WeiboUser, WeiboVideo, WeiqiTV, WeTvSeries, Weverse, WeverseLive,
+ WeverseLiveTab, WeverseMedia, WeverseMediaTab, WeverseMoment, WeVidi,
+ whowatch, Whyp, wikimedia.org, Wimbledon, WimTV, WinSportsVideo, Wistia,
+ WistiaChannel, WistiaPlaylist, wnl, WorldStarHipHop, wppilot, WSJ,
+ WSJArticle, WWE, WyborczaPodcast, XboxClips, XHamster, XHamsterEmbed,
+ XHamsterUser, XiaoHongShu, ximalaya, Xinpianchang, XMinus, XNXX, XVideos,
+ XXXYMovies, yahoo, YandexDisk, YandexVideo, YandexVideoPreview, YapFiles,
+ Yappy, YappyProfile, yfanefa, YleAreena, YouJizz, youku, YouNowChannel,
+ YouNowLive, YouNowMoment, YouPorn, YouPornCategory, YouPornChannel,
+ YouPornCollection, YouPornStar, YouPornTag, YouPornVideos, youtube,
+ YoutubeLivestreamEmbed, YoutubeYtBe, Zaiko, ZaikoETicket, zan, Zapiks,
+ Zattoo, ZattooLive, ZattooMovies, ZattooRecordings, zdf, ZeeNews, ZenPorn,
+ ZetlandDKArticle, Zhihu, zingmp3, zoom, Zype, generic,
 
