@@ -493,6 +493,25 @@ Description: Script to "manage" .deb installs from 3rd party vendors/projects
  apt-get functionality for .debs officially published by 3rd party vendors and
  projects.
 
+Package: deb-get
+Architecture: all
+Version: 0.4.7-1
+Priority: optional
+Section: utils
+Maintainer: Martin Wimpress <code@wimpress.io>
+Installed-Size: 99
+Depends: apt, apt-transport-https, bash (>= 4.4~), coreutils (>= 8.25~), curl, distro-info-data, dpkg, gpg, grep, jq, libc-bin, lsb-release, sed, sudo, wget
+Filename: pool/main/deb-get_0.4.7-1_all.deb
+Size: 26418
+MD5sum: d8793b71b7ecc12ae34932d4cb4ec4ef
+SHA1: 2759baed2b79ac574bd0962d89ded6edccc096bd
+SHA256: 8164b6019a10f0c8ffd91f347f4bf198d4a08ef036fd9cdddf2c9c4cdc6017ca
+SHA512: b001eebdb9f8a9129c4bfe3e3b2ad848c9af30c53f7f78580a9be10f1e285a9f1163543133cf738b4a15e098c704ea722ff3fd7506eaca1eede84ff50b40ea92
+Homepage: https://github.com/wimpysworld/deb-get
+Description: Script to "manage" .deb installs from 3rd party vendors/projects
+ apt-get functionality for .debs officially published by 3rd party vendors and
+ projects.
+
 Package: devubox-archive-keyring
 Architecture: all
 Version: 2025.11
@@ -1427,6 +1446,24 @@ Description: restricted codecs installer
  in your jurisdiction.  For the most part, users would only need libdvdcss2 for
  commercial DVD playback, most of the codecs in the other two packages are now
  provided in open media players.
+
+Package: mx-idevice-mounter
+Architecture: all
+Version: 0.1.5.13
+Priority: optional
+Section: python
+Maintainer: Timothy E. Harris <maintainer@mxrepo.com>
+Installed-Size: 196
+Depends: python3, python3-pyqt5, mx-iphone, python3-distutils, wmctrl
+Filename: pool/main/mx-idevice-mounter_0.1.5.13_all.deb
+Size: 21856
+MD5sum: 836a020925c616b4a7c85c9acdaf0b04
+SHA1: b05aa9d7af12e40ed6ecef4894d37434f1e60afc
+SHA256: 3f66903efad12e0856764ba93613ca3fcb5526f94aa45b85c3f18f8983b2c125
+SHA512: ce8cb30cb96144b223744fb23fb3cfd3d51a7fd0063b7aa8fbb9227d5016e113edf8e5d16964e6aeb2865f6f86542213621498ed7203ff843d6e701966edf0b4
+Description: GUI to Mount and Unmount iPhones and iPads
+ mx-idevice-mounter is a simpler way to use the idevice/ifuse set of utilities to
+ manage iPhone/iPad filesystems.
 
 Package: mx-iphone
 Architecture: all
