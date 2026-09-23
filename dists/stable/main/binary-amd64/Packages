@@ -1449,18 +1449,18 @@ Description: restricted codecs installer
 
 Package: mx-idevice-mounter
 Architecture: all
-Version: 0.1.5.13
+Version: 0.1.5.15
 Priority: optional
 Section: python
 Maintainer: Timothy E. Harris <maintainer@mxrepo.com>
-Installed-Size: 196
-Depends: python3, python3-pyqt5, mx-iphone, python3-distutils, wmctrl
-Filename: pool/main/mx-idevice-mounter_0.1.5.13_all.deb
-Size: 21856
-MD5sum: 836a020925c616b4a7c85c9acdaf0b04
-SHA1: b05aa9d7af12e40ed6ecef4894d37434f1e60afc
-SHA256: 3f66903efad12e0856764ba93613ca3fcb5526f94aa45b85c3f18f8983b2c125
-SHA512: ce8cb30cb96144b223744fb23fb3cfd3d51a7fd0063b7aa8fbb9227d5016e113edf8e5d16964e6aeb2865f6f86542213621498ed7203ff843d6e701966edf0b4
+Installed-Size: 197
+Depends: python3, python3-pyqt5, mx-iphone
+Filename: pool/main/mx-idevice-mounter_0.1.5.15_all.deb
+Size: 21568
+MD5sum: 82e8fa639730537e472e73ecbe25d8fc
+SHA1: ac0a938a2fcb2ede3c772a84daa5fadb76f3b08b
+SHA256: 8e0fe01ea0046c212bfe14de8d26ab68b70feb0c920e5722bc02abe702f42784
+SHA512: 3ba0d0a4fd3807957e7afc8c904d20c98f70964123e4058911560d5404f800c57601d10eb175ecda76a2a8250c8383835aa1a881c809099d849eb466af6a0859
 Description: GUI to Mount and Unmount iPhones and iPads
  mx-idevice-mounter is a simpler way to use the idevice/ifuse set of utilities to
  manage iPhone/iPad filesystems.
