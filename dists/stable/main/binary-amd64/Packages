@@ -1508,6 +1508,30 @@ Description: MX Night Light.
  according to your surroundings. This may help your eyes
  hurt less if you are working in front of the screen at night.
 
+Package: mx-night-light
+Architecture: all
+Version: 0.6.0+mx25
+Priority: optional
+Section: x11
+Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
+Installed-Size: 683
+Provides: pardus-night-light
+Depends: python3-gi, python3:any, gir1.2-ayatanaappindicator3-0.1, gir1.2-glib-2.0, gir1.2-gtk-3.0, python3-distro, redshift
+Breaks: pardus-night-light, redshift-gtk, redshift-qt
+Replaces: pardus-night-light
+Filename: pool/main/mx-night-light_0.6.0+mx25_all.deb
+Size: 29196
+MD5sum: 1bfc8fb8274c7aa0c68be4d510e53e8e
+SHA1: 5f92561367d460e97d0df72787ef3dbf2ff4f410
+SHA256: 4443531bd77fab7f0ba5b3adf994c5743e939278110665a4d017f7d09e540775
+SHA512: 14f671a76330a0226bcefb8153e62b4d7922ebd77711b43b68720693c187da8f11a926b5779d5eb9b33da16ee4ec83ba6221182a816731e4fe334f1b34196ce4
+Homepage: https://github.com/DevuboxLinux/mx-night-light
+Description: MX Night Light.
+ Simple color temperature application based on Redshift.
+ Redshift adjusts the color temperature of your screen
+ according to your surroundings. This may help your eyes
+ hurt less if you are working in front of the screen at night.
+
 Package: network-manager-applet
 Architecture: amd64
 Version: 1.36.1-4
