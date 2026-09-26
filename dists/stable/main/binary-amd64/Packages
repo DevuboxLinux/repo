@@ -1808,18 +1808,18 @@ Description: perl module for parsing the Linux desktop files
 
 Package: plank-reloaded
 Architecture: amd64
-Version: 0.11.153-1
+Version: 0.11.172-1
 Priority: optional
 Section: x11
 Maintainer: Josh Ellithorpe <quest@mac.com>
-Depends: bamfdaemon, libgee-0.8-2, libgnome-menu-3-0, libwnck-3-0, libc6
+Depends: bamfdaemon, libgee-0.8-2, libgnome-menu-3-0, libwnck-3-0, libcanberra0t64 | libcanberra0, libc6
 Conflicts: plank, libplank-common, libplank1
-Filename: pool/main/plank-reloaded_0.11.153-1_amd64.deb
-Size: 540524
-MD5sum: 81d35df78b5105bbed7721bdc285abac
-SHA1: 64afdfb37fa3381c31d5ab45ebae90a0903a5761
-SHA256: c7107f447d79db3844de9d2b11812a54e969cac86dc92dfe9c720969598ff373
-SHA512: d0fe69c7d4a6ec149889a1e6da8b890a13d0180b88b9d13c1687b491c0af0f0385bdee22b36b77a08d0b160e4ac42292701fa6800e947d2127050a1d97d6a1c6
+Filename: pool/main/plank-reloaded_0.11.172-1_amd64.deb
+Size: 647716
+MD5sum: 9217d549e7c1508a177c4b7f102333a8
+SHA1: 97a9d7ef3364521272f40f4ea7ddb5677b580290
+SHA256: d9573e0c3245e12438c282a5e742b609a48f148fc1520f629b753a9c8e336ecf
+SHA512: fdedaa3f54524734d11ecd877f17c72c636fdcfa8e50b2b063f074637a1460704dd46db3caffff5fffced7fe143f5035a11b6c1062c174cb7a048cbdf26b93a9
 Homepage: https://github.com/zquestz/plank-reloaded
 Description: Elegant and simple dock.
  Plank Reloaded is a fork of the original Plank project, providing a simple dock
