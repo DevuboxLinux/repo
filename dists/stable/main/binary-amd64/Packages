@@ -977,6 +977,48 @@ Description: Graphical CD image editor
   - extract files from an image
   - delete files from an image
 
+Package: jgmenu-xfce4-panel-applet
+Architecture: amd64
+Version: 4.7.1-1~devubox+1
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: jgmenu
+Maintainer: Johan Malm <jgm323@gmail.com>
+Installed-Size: 35
+Depends: libc6 (>= 2.4), libglib2.0-0t64 (>= 2.32.0), libgtk-3-0t64 (>= 3.0.0), libxfce4panel-2.0-4 (>= 4.11.0), libxfce4util7 (>= 4.9.0), jgmenu (>= 3.5)
+Filename: pool/main/jgmenu-xfce4-panel-applet_4.7.1-1~devubox+1_amd64.deb
+Size: 6988
+MD5sum: d372b2c07364185fff17d7e0a57aef69
+SHA1: fa120dbce9cbf87809ae80ee48c0fb17efcebb43
+SHA256: 46b4dee8cdb0473115b7cb204a0c5b95e16ade31022f70166878e43a62ebb717
+SHA512: 084a0d217f46a6cb550f318cc481063e837fa4da78ba92e53516a68719234ceb289e9d9b6bc1e6cde8b38bb870727f01127c061429874d9a88a1a579887529e2
+Homepage: https://jgmenu.github.io/
+Description: xfce4-panel applet for jgmenu
+ An xfce4-panel applet for jgmenu
+
+Package: jgmenu
+Architecture: amd64
+Version: 4.7.1-1~devubox+1
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Maintainer: Johan Malm <jgm323@gmail.com>
+Installed-Size: 499
+Depends: libc6 (>= 2.34), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.12.0), libmenu-cache3 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpng16-16t64 (>= 1.6.46), librsvg2-2 (>= 2.46.0), libx11-6, libxml2 (>= 2.7.4), libxrandr2 (>= 2:1.2.99.2), python3, python3-gi, x11-xserver-utils
+Suggests: lxmenu-data
+Filename: pool/main/jgmenu_4.7.1-1~devubox+1_amd64.deb
+Size: 126492
+MD5sum: b25f14c9caf5cf0e1a6fdaf69c99d393
+SHA1: c33efaedfc51b59d25b6fdda892ae3abc8dbae9c
+SHA256: 860943f715e5bd6c566a50229137d2dcdb61cb128705868ae26edcea1298d2ac
+SHA512: a1be1a1b1981f25eb0bdf2dcb8742a50290fabff009820225d5001cccabafab939272621ad338dd4815f7a7641c8280ba18da18af4cfc20c961e91567a3fd484
+Homepage: https://jgmenu.github.io/
+Description: Simple X11 menu
+ A stand-alone, contemporary-looking menu application for Linux and BSD.
+ Independent of window manager and panel. Designed for customisation,
+ scripting, modding and tweaking
+
 Package: lazpaint-qt5
 Architecture: amd64
 Version: 7.3-1
@@ -1531,6 +1573,33 @@ Description: MX Night Light.
  Redshift adjusts the color temperature of your screen
  according to your surroundings. This may help your eyes
  hurt less if you are working in front of the screen at night.
+
+Package: mx-night-light
+Architecture: all
+Version: 0.7.0+mx25
+Priority: optional
+Section: x11
+Maintainer: TheBSODFan <bsodandwsod501@gmail.com>
+Installed-Size: 700
+Provides: pardus-night-light
+Depends: python3-gi, python3:any, gir1.2-ayatanaappindicator3-0.1, gir1.2-glib-2.0, gir1.2-gtk-3.0, python3-distro, redshift
+Suggests: gammastep
+Breaks: pardus-night-light, redshift-gtk, redshift-qt
+Replaces: pardus-night-light
+Filename: pool/main/mx-night-light_0.7.0+mx25_all.deb
+Size: 32544
+MD5sum: 20a04c69d97ed2979783953c24f86de2
+SHA1: f35366838c1707b084fb4350fb3ffed4555041f7
+SHA256: d2a47ad2d0e075579fda52d04f3a3c1e28a89d96b46b9f416db6d1892dd30286
+SHA512: e6e30cf3397aae16c9cd9214b2169d126a5ee3d284373858ea479ff631b37f2d517af15032027eba3715d4c7ade45b55d5ed716ad9efa9845a4b7cea594551bd
+Homepage: https://github.com/DevuboxLinux/mx-night-light
+Description: MX Night Light.
+ Simple color temperature application based on Redshift.
+ Redshift adjusts the color temperature of your screen
+ according to your surroundings. This may help your eyes
+ hurt less if you are working in front of the screen at night.
+ Depending on the desktop, uses redshift, GNOME Night Light,
+ KDE Night Color, or gammastep.
 
 Package: network-manager-applet
 Architecture: amd64
