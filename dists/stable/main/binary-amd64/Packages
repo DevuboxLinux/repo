@@ -1233,6 +1233,47 @@ Description: Fast LZ compression algorithm library - transitional package
  .
  This is a transitional package. It can be safely removed.
 
+Package: libqt-color-widgets2
+Architecture: amd64
+Version: 3.0.0-2~bpo13+1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: qt-color-widgets
+Maintainer: Dima Kogan <dkogan@debian.org>
+Installed-Size: 865
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.8.2), libqt6widgets6 (>= 6.3.0), libstdc++6 (>= 5)
+Filename: pool/main/libqt-color-widgets2_3.0.0-2~bpo13+1_amd64.deb
+Size: 195816
+MD5sum: c18333e7e90ebaa9d70c6e2ed7bd0405
+SHA1: 0741b940fcfeb666ffe68749573e6ccf2ce595b0
+SHA256: 6124c85e68cf72e3efeea3e4d47de021489b94c2b1ad3f0f1be5bba99090658c
+SHA512: 09d58d25f1a1ad65f885bd69e63751b53e84fa97abeedbdbde1a96a74e3970ad9932aaf9b1ad0fbe547b15ef190d2f39158200d8f72b2acf9116bd89ea40e196
+Homepage: https://gitlab.com/mattbas/Qt-Color-Widgets
+Description: Qt widgets to manage color inputs
+ This is a color dialog that is more user-friendly than the default QColorDialog
+ and several other color-related widgets
+ .
+ The provided widgets are:
+   - ColorWheel, An analog widget used to select a color
+   - ColorPreview, A simple widget that displays a color
+   - GradientSlider, A slider that has a gradient background
+   - HueSlider, A variant of GradientSlider that has a rainbow background
+   - ColorSelector, A ColorPreview that shows a ColorDialog when clicked
+   - ColorDialog, A dialog that uses the above widgets to provide a better user
+     experience than QColorDialog
+   - ColorListWidget, A widget to edit a list of colors
+   - Swatch, A widget to display a color palette
+   - ColorPaletteWidget, A widget to use and manage a list of palettes
+   - Color2DSlider, An analog widget used to select 2 color components
+   - ColorLineEdit, A widget to manipulate a string representing a color
+   - HarmonyColorWheel, A ColorWheel which allows defining multiple colors,
+     separated by hue
+   - GradientListModel, A QAbstractListModel used to list gradients (useful for
+     combo boxes, list views and the like)
+ .
+ This package contains the run-time libraries
+
 Package: libswitchboard-3-0
 Architecture: amd64
 Version: 8.0.2~r1400+pkg86~ubuntu8.1
@@ -2015,6 +2056,37 @@ Description: GUI version of PhotoRec recovery tool
  QPhotoRec is a file data recovery software application. It is a GUI version of the
  PhotoRec recovery tool. It was designed to recover lost files from digital camera
  memory, hard disks or CD-ROMs.
+
+Package: partedmagic-tools
+Architecture: all
+Version: 26.11.3-1
+Priority: optional
+Section: utils
+Maintainer: Local Packager <root@localhost>
+Installed-Size: 18524
+Depends: python3 (>= 3.10), python3-gi, python3-gi-cairo, python3-cairo, gir1.2-gtk-3.0, gir1.2-vte-2.91, xdg-utils, util-linux, coreutils, bash, file
+Recommends: python3-reportlab, gir1.2-poppler-0.18, libglib2.0-bin, procps, psmisc, sudo, eject, iputils-ping, dialog, whiptail, zenity, xinit, kbd, x11-xkb-utils, parted, fdisk, gdisk, gddrescue, smartmontools, nvme-cli, hdparm, sdparm, sedutil, e2fsprogs, ntfs-3g, dosfstools, exfatprogs, f2fs-tools, jfsutils, reiserfsprogs, xfsprogs, btrfs-progs, hfsprogs, hfsutils, nilfs-tools, udftools, lvm2, mdadm, cryptsetup, testdisk, fsarchiver, partclone, clonezilla, sg3-utils, mmc-utils, dmidecode, lshw, udisks2, udev, util-linux-extra, efibootmgr, mokutil, sbsigntool, openssl, tpm2-tools, chntpw, clamav, clamav-freshclam, espeak-ng, florence, cifs-utils, nfs-common, curlftpfs, sshfs, dislocker, rsync, squashfs-tools, zstd, rclone, partimage, nwipe, imagemagick, alsa-utils, dconf-cli, x11-xserver-utils, xdotool, conky-all, xfce4-terminal, xfconf, mousepad, ffmpeg, rdate
+Suggests: zfsutils-linux, ms-sys, apfs-fuse, reiser4progs, bsd-mailx, wodim, inkscape, libreoffice, xpdf
+Filename: pool/main/rescue-tools_26.11.3-1_all.deb
+Size: 8838552
+MD5sum: d65fc1cdf672b673836e289ef507fd5c
+SHA1: 82165874355dee20e6f75a71e444f12c47c793bc
+SHA256: e83838d73a67d0f3c37444c1fa11851b3989f2ebe6b8a7ffec5e5ea588603d12
+SHA512: 85ae125898b529b6fa8e4d473f65bb95ab612b65726de92b2ba4189c809131a386032097666e8f5e0f107ef2e2061065abee34e1c14afb39f4e1a5593edd1be6
+Homepage: https://partedmagic.com/
+Description: PartedMagic applications ported to Debian
+ This package contains the PartedMagic GUI and command-line utilities,
+ including disk cloning, the VisParted partition editor, secure erase,
+ boot repair, Secure Boot and TPM management, password reset, the file
+ manager, file viewer, hex editor, mount manager, keymap and time-sync
+ tools, together with their desktop entries and icons.
+ .
+ The programs are the upstream PartedMagic scripts. Their external helper
+ programs are listed as Recommends; where an application provides a
+ --check-deps option it reports exactly what is missing.
+ .
+ No autostart entries, service units, init scripts or session hooks are
+ installed. Startup and services are left to Debian.
 
 Package: rescuezilla
 Architecture: all
